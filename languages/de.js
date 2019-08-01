@@ -1,0 +1,167 @@
+// Language resources
+//
+// (c) Searchwork.org
+// Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+//
+// Template for app version 1.0.1. Any missing item will fall back to english
+//
+"use strict";
+
+de = {   // <----- Set to ISO 639-1 language code (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
+    // Name of the language
+    me: 'Deutsch',
+    // Pages
+    pages: {
+        schedule: 'Plan',
+        settings: 'Einstellungen',
+        help: 'Hilfe (englisch)',
+        storedData: 'Gespeicherte Daten (englisch)',
+        privacyPolicy: 'Datenschutzerklärung (englisch)'
+    },
+
+    // Schedule page
+    plans_header: 'Wähle einen Plan',
+    speed_header: 'Geschwindigkeit',
+
+    // Settings page 
+    //
+    language: {
+        label: 'Sprache',
+        placeholder: 'Sprache',
+        title: 'Wähle eine Sprache',
+        contribute: 'Übersetzung beisteuern'
+    },
+    // Reading plans
+    plan: {
+        label: 'Leseplan',
+        placeholder: 'Leseplan',
+        title: 'Wähle einen Leseplan',
+        description: 'Das Ändern des Leseplans ändert nicht den Lesestatus des aktuellen Plans.'
+    },
+    plans: {
+        // In the order the chapters appear in the Bible
+        sequential: 'Der Reihe nach',
+        // In the order the Bible books were written
+        written: 'Wie aufgezeichnet',
+        // In the order the events happened
+        chronological: 'Chronologisch (experimentell)',
+        // Christian Greek Scriptures only
+        greek_scriptures: 'Christliche griechische Schriften'
+    },
+    startOver: {
+        label: 'Neu beginnen',
+        title: 'Neu beginnen',
+        description: 'Setzt den Lesestatus zurück und das Anfangsdatum auf heute.',
+        question: 'Möchtest du den Lesestatus zurücksetzen und das Anfangsdatum auf heute setzen?'
+    },
+    continueAt: {
+        label: 'Fortsetzen bei',
+        placeholder: '<auswählen>',
+        title: 'Wähle wo du mit dem Lesen fortsetzen möchtest.',
+        description: 'Alles davor wird auf gelesen und alles danach auf ungelesen gesetzt.',
+        question: 'Möchtest du alles davor auf gelesen und alles danach auf ungelesen setzen?'
+    },
+    startDate: {
+        label: 'Anfangsdatum',
+        placeholder: 'Anfangsdatum',
+        title: 'Setze das Anfangsdatum',
+        description: 'Setze das Anfangsdatum um den Fortschritt beim Bibellesen zu verfolgen.'
+    },
+    WOLlinks: {
+        label: 'WOL Links deaktivieren',
+        description: 'Links in Die Bibel. Neue-Welt-Übersetzung in der Wachtturm Online-Bibliothek werden im Browser geöffnet.'
+    },
+    help: 'Hilfe',
+    legal: 'Rechtliches',
+    version: 'Version',
+
+    // Bible
+    //
+    // Ordered list of the Bible books
+    books: [
+        '1. Mose', '2. Mose', '3. Mose', '4. Mose', '5. Mose',
+        'Josua', 'Richter', 'Ruth', '1. Samuel', '2. Samuel',
+        '1. Könige', '2. Könige', '1. Chronika', '2. Chronika',
+        'Esra', 'Nehemia', 'Esther', 'Hiob',
+        'Psalm', 'Sprüche', 'Prediger', 'Hohes Lied',
+        'Jesaja', 'Jeremia', 'Klagelieder', 'Hesekiel', 'Daniel',
+        'Hosea', 'Joel', 'Amos', 'Obadja', 'Jona', 'Micha', 'Nahum',
+        'Habakuk', 'Zephanja', 'Haggai', 'Sacharja', 'Maleachi',
+        'Matthäus', 'Markus', 'Lukas', 'Johannes', 'Apostelgeschichte',
+        'Römer', '1. Korinther', '2. Korinther',
+        'Galater', 'Epheser', 'Philipper', 'Kolosser',
+        '1. Thessalonicher', '2. Thessalonicher', '1. Timotheus', '2. Timotheus',
+        'Titus', 'Philemon', 'Hebräer', 'Jakobus',
+        '1. Petrus', '2. Petrus', '1. Johannes', '2. Johannes', '3. Johannes',
+        'Judas', 'Offenbarung'
+    ],
+    // Base link to the Bible in the Watchtower Online Library in this language
+    baseURL: 'https://wol.jw.org/de/wol/b/r10/lp-x/nwt/X/2018',
+
+    // Events
+    // (see Chart of outstanding historical dates at
+    //      https://wol.jw.org/en/wol/d/r1/lp-e/1101990130#h=252)
+    //
+    // Symbols: a. for “after”; b. for “before”; c. for “circa,” or “about.”
+    //          C.E. for Common Era; B.C.E. for Before Common Era
+    symbols: {
+        'a.': 'n.',
+        'b.': 'v.',
+        'c.': 'um',
+        'C.E.': 'u. Z.',
+        'B.C.E.': 'v. u. Z.'
+    },
+    chart: {
+        text: 'Ereignisse basierend auf',
+        book: '„Die ganze Schrift ist von Gott inspiriert und nützlich“',
+        chapter: 'Studie 3 — Ereignisse in den Strom der Zeit einordnen',
+        caption: 'Tabelle hervorragender Geschichtsdaten',
+        URL: 'https://wol.jw.org/de/wol/d/r10/lp-x/1101990130#h=254',
+    },
+
+
+    // Help
+    //
+    // Help
+    helpPage: [
+        'About',
+        'NWT Reading helps you to keep track of your reading schedule of the \
+            New World Translation of the Holy Scriptures of Jehovah\'s Witnesses.',
+
+        'How it Works',
+        'Read right away from the beginning and check each section that you have read.',
+
+        'If you want to start at the current position of your Bible reading, select',
+        'Continue at',
+        'on the',
+        'Settings',
+        'page.',
+
+        'After finishing reading the Bible select',
+        'Start Over',
+    ],
+    
+    // Stored Data
+    storedDataPage: [
+        'This is a dump of all the data that is stored in the app. \
+            It can be useful for troubleshooting and privacy checking.'
+    ],
+
+    // Legal
+    //
+    // Privacy Policy
+    privacyPolicyPage: [
+        'The NWT Reading mobile application (the “PRODUCT”) does not collect \
+        any personal information. All data is stored locally.',
+
+        'SearchWork.org, does not allow advertising companies to collect data through \
+        our PRODUCT for ad targeting. \
+        We do not share data collected by this PRODUCT with other organizations \
+        for any purpose.',
+
+        'This privacy policy was last updated on 05/04/2019. \
+        Our privacy policy may change from time to time. \
+        You are advised to review this Privacy Policy periodically for any changes. \
+        Changes to this Privacy Policy are effective when they are posted on this page.'
+    ],
+};
