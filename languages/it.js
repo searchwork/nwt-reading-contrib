@@ -100,11 +100,11 @@ it = {   // <----- Set to ISO 639-1 language code (see https://en.wikipedia.org/
     baseURL: 'https://wol.jw.org/it/wol/b/r6/lp-i/nwtsty/I/2019',
 
 
-    // ----------  the following is OPTIONAL  vvvvvvvvvv
+    // ----------  Translating below section is OPTIONAL  vvvvvvvvvv
     //
     // Events
     // (see Chart of outstanding historical dates at
-    //      <https://wol.jw.org/it/wol/d/r6/lp-i/1101990130#h=253)> 
+    //      https://wol.jw.org/en/wol/d/r1/lp-e/1101990130#h=252)
     //
     // Symbols: a. for “after”; b. for “before”; c. for “circa,” or “about.”
     //          C.E. for Common Era; B.C.E. for Before Common Era
@@ -168,5 +168,5 @@ it = {   // <----- Set to ISO 639-1 language code (see https://en.wikipedia.org/
         You are advised to review this Privacy Policy periodically for any changes. \
         Changes to this Privacy Policy are effective when they are posted on this page.'
     ],
-    // ^^^^^^^^^^^^  translating above section is OPTIONAL  ------------
+    // ^^^^^^^^^^^^  Translating above section is OPTIONAL  ------------
 };

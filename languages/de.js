@@ -99,7 +99,7 @@ de = {   // <----- Set to ISO 639-1 language code (see https://en.wikipedia.org/
     baseURL: 'https://wol.jw.org/de/wol/b/r10/lp-x/nwt/X/2018',
 
 
-    // ----------  the following is OPTIONAL  vvvvvvvvvv
+    // ----------  Translating below section is OPTIONAL  vvvvvvvvvv
     //
     // Events
     // (see Chart of outstanding historical dates at
@@ -167,5 +167,5 @@ de = {   // <----- Set to ISO 639-1 language code (see https://en.wikipedia.org/
         You are advised to review this Privacy Policy periodically for any changes. \
         Changes to this Privacy Policy are effective when they are posted on this page.'
     ],
-    // ^^^^^^^^^^^^  translating above section is OPTIONAL  ------------
+    // ^^^^^^^^^^^^  Translating above section is OPTIONAL  ------------
 };
