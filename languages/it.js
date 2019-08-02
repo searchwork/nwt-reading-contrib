@@ -99,6 +99,9 @@ it = {   // <----- Set to ISO 639-1 language code (see https://en.wikipedia.org/
     // Base link to the Bible in the Watchtower Online Library in this language
     baseURL: 'https://wol.jw.org/it/wol/b/r6/lp-i/nwtsty/I/2019',
 
+
+    // ----------  the following is OPTIONAL  vvvvvvvvvv
+    //
     // Events
     // (see Chart of outstanding historical dates at
     //      <https://wol.jw.org/it/wol/d/r6/lp-i/1101990130#h=253)> 
@@ -141,7 +144,7 @@ it = {   // <----- Set to ISO 639-1 language code (see https://en.wikipedia.org/
         'After finishing reading the Bible select',
         'Start Over',
     ],
-    
+
     // Stored Data
     storedDataPage: [
         'This is a dump of all the data that is stored in the app. \
@@ -165,4 +168,5 @@ it = {   // <----- Set to ISO 639-1 language code (see https://en.wikipedia.org/
         You are advised to review this Privacy Policy periodically for any changes. \
         Changes to this Privacy Policy are effective when they are posted on this page.'
     ],
+    // ^^^^^^^^^^^^  translating above section is OPTIONAL  ------------
 };
