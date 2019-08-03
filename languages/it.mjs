@@ -30,7 +30,7 @@ export default {
         // In the order the events happened
         chronological: 'Cronologico (sperimentale)',
         // Christian Greek Scriptures only
-        greek_scriptures: 'Scritture Greche Cristiane'
+        greekScriptures: 'Scritture Greche Cristiane'
     },
     speed_header: 'Velocità',
 
