@@ -21,16 +21,6 @@ export default {
     // Schedule page
     //
     plans_header: 'Seleziona un piano di lettura',
-    speed_header: 'Velocità',
-
-    // Settings page 
-    //
-    language: {
-        label: 'Lingua',
-        placeholder: 'Lingua',
-        title: 'Scegli una lingua',
-        contribute: 'Contribuire alla traduzione'
-    },
     // Reading plans
     plans: {
         // In the order the chapters appear in the Bible
@@ -41,6 +31,17 @@ export default {
         chronological: 'Cronologico (sperimentale)',
         // Christian Greek Scriptures only
         greek_scriptures: 'Scritture Greche Cristiane'
+    },
+    speed_header: 'Velocità',
+
+    // Settings page 
+    //
+    english: 'inglese',
+    language: {
+        label: 'Lingua',
+        placeholder: 'Lingua',
+        title: 'Scegli una lingua',
+        contribute: 'Contribuire alla traduzione'
     },
     startOver: {
         label: 'Ricomincia',

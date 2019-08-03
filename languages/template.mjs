@@ -13,24 +13,14 @@ export default {
     pages: {
         schedule: 'Schedule',
         settings: 'Settings',
-        help: 'Help (english)',
-        storedData: 'Stored Data (english)',
-        privacyPolicy: 'Privacy Policy (english)'
+        help: 'Help',
+        storedData: 'Stored Data',
+        privacyPolicy: 'Privacy Policy'
     },
 
     // Schedule page
     //
     plans_header: 'Select a reading plan',
-    speed_header: 'Speed',
-
-    // Settings page 
-    //
-    language: {
-        label: 'Language',
-        placeholder: 'Language',
-        title: 'Choose a language',
-        contribute: 'Contribute translation'
-    },
     // Reading plans
     plans: {
         // In the order the chapters appear in the Bible
@@ -41,6 +31,17 @@ export default {
         chronological: 'Chronological (experimental)',
         // Christian Greek Scriptures only
         greek_scriptures: 'Christian Greek Scriptures'
+    },
+    speed_header: 'Speed',
+    
+    // Settings page 
+    //
+    english: 'English',
+    language: {
+        label: 'Language',
+        placeholder: 'Language',
+        title: 'Choose a language',
+        contribute: 'Contribute Translation'
     },
     startOver: {
         label: 'Start Over',

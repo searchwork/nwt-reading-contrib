@@ -21,16 +21,6 @@ export default {
     // Schedule page
     //
     plans_header: 'Alege un program',
-    speed_header: 'Viteză',
-
-    // Settings page 
-    //
-    language: {
-        label: 'Limba',
-        placeholder: 'Limba',
-        title: 'Alege limba',
-        contribute: 'Contribuie la traducere'
-    },
     // Reading plans
     plans: {
         // In the order the chapters appear in the Bible
@@ -41,6 +31,17 @@ export default {
         chronological: 'cronologic (experimental)',
         // Christian Greek Scriptures only
         greek_scriptures: 'Scripturile Grecești Creștine'
+    },
+    speed_header: 'Viteză',
+
+    // Settings page 
+    //
+    english: 'engleză',
+    language: {
+        label: 'Limba',
+        placeholder: 'Limba',
+        title: 'Alege limba',
+        contribute: 'Contribuie la traducere'
     },
     startOver: {
         label: 'Reîncepe',
