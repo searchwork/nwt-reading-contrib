@@ -3,11 +3,9 @@
 // (c) Searchwork.org
 // Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 //
-// Template for app version 1.0.1. Any missing item will fall back to english
+// Template for app version 1.0.2. Any missing item will fall back to english
 //
-"use strict";
-
-en = {   // <----- Set to ISO 639-1 language code (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
+export default {
     // Name of the language
     me: 'English',
 
@@ -21,6 +19,7 @@ en = {   // <----- Set to ISO 639-1 language code (see https://en.wikipedia.org/
     },
 
     // Schedule page
+    //
     plans_header: 'Select a reading plan',
     speed_header: 'Speed',
 
@@ -33,12 +32,6 @@ en = {   // <----- Set to ISO 639-1 language code (see https://en.wikipedia.org/
         contribute: 'Contribute translation'
     },
     // Reading plans
-    plan: {
-        label: 'Reading Plan',
-        placeholder: 'Reading Plan',
-        title: 'Select a reading plan',
-        description: 'Changing the plan will not alter the reading status of the current plan.'
-    },
     plans: {
         // In the order the chapters appear in the Bible
         sequential: 'Sequential',
@@ -61,12 +54,6 @@ en = {   // <----- Set to ISO 639-1 language code (see https://en.wikipedia.org/
         title: 'Select where to continue with the reading',
         description: 'All previous sections will be marked as read and those following as unread.',
         question: 'Do you want to set all previous sections to read and those following to unread?'
-    },
-    startDate: {
-        label: 'Start Date',
-        placeholder: 'Start Date',
-        title: 'Set the start date',
-        description: 'Set the start date to track the progress of your reading.'
     },
     WOLlinks: {
         label: 'Disable WOL Links',
@@ -134,17 +121,11 @@ en = {   // <----- Set to ISO 639-1 language code (see https://en.wikipedia.org/
 
         'How it Works',
         'Read right away from the beginning and check each section that you have read.',
-
-        'If you want to start at the current position of your Bible reading, select',
-        'Continue at',
-        'on the',
-        'Settings',
-        'page.',
-
-        'After finishing reading the Bible select',
-        'Start Over',
+        'If you want to start at the current position of your Bible reading, select \
+            "Continue at" on the Settings page.',
+        'After finishing reading the Bible select "Start Over" on the Settings page.',
     ],
-    
+
     // Stored Data
     storedDataPage: [
         'This is a dump of all the data that is stored in the app. \

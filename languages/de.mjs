@@ -3,13 +3,12 @@
 // (c) Searchwork.org
 // Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 //
-// Template for app version 1.0.1. Any missing item will fall back to english
+// Template for app version 1.0.2. Any missing item will fall back to english
 //
-"use strict";
-
-de = {   // <----- Set to ISO 639-1 language code (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
+export default {
     // Name of the language
     me: 'Deutsch',
+    
     // Pages
     pages: {
         schedule: 'Plan',
@@ -20,6 +19,7 @@ de = {   // <----- Set to ISO 639-1 language code (see https://en.wikipedia.org/
     },
 
     // Schedule page
+    //
     plans_header: 'Wähle einen Plan',
     speed_header: 'Geschwindigkeit',
 
@@ -32,12 +32,6 @@ de = {   // <----- Set to ISO 639-1 language code (see https://en.wikipedia.org/
         contribute: 'Übersetzung beisteuern'
     },
     // Reading plans
-    plan: {
-        label: 'Leseplan',
-        placeholder: 'Leseplan',
-        title: 'Wähle einen Leseplan',
-        description: 'Das Ändern des Leseplans ändert nicht den Lesestatus des aktuellen Plans.'
-    },
     plans: {
         // In the order the chapters appear in the Bible
         sequential: 'Der Reihe nach',
@@ -60,12 +54,6 @@ de = {   // <----- Set to ISO 639-1 language code (see https://en.wikipedia.org/
         title: 'Wähle wo du mit dem Lesen fortsetzen möchtest.',
         description: 'Alles davor wird auf gelesen und alles danach auf ungelesen gesetzt.',
         question: 'Möchtest du alles davor auf gelesen und alles danach auf ungelesen setzen?'
-    },
-    startDate: {
-        label: 'Anfangsdatum',
-        placeholder: 'Anfangsdatum',
-        title: 'Setze das Anfangsdatum',
-        description: 'Setze das Anfangsdatum um den Fortschritt beim Bibellesen zu verfolgen.'
     },
     WOLlinks: {
         label: 'WOL Links deaktivieren',
@@ -133,15 +121,9 @@ de = {   // <----- Set to ISO 639-1 language code (see https://en.wikipedia.org/
 
         'How it Works',
         'Read right away from the beginning and check each section that you have read.',
-
-        'If you want to start at the current position of your Bible reading, select',
-        'Continue at',
-        'on the',
-        'Settings',
-        'page.',
-
-        'After finishing reading the Bible select',
-        'Start Over',
+        'If you want to start at the current position of your Bible reading, select \
+            "Continue at" on the Settings page.',
+        'After finishing reading the Bible select "Start Over" on the Settings page.',
     ],
 
     // Stored Data

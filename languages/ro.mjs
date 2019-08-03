@@ -3,11 +3,9 @@
 // (c) Searchwork.org
 // Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 //
-// Template for app version 1.0.1. Any missing item will fall back to english
+// Template for app version 1.0.2. Any missing item will fall back to english
 //
-"use strict";
-
-ro = {   // <----- Set to ISO 639-1 language code (see https://en.wikipedia.org/wiki/List_of_ISO_639-1_codes)
+export default {
     // Name of the language
     me: 'Română',
 
@@ -21,6 +19,7 @@ ro = {   // <----- Set to ISO 639-1 language code (see https://en.wikipedia.org/
     },
 
     // Schedule page
+    //
     plans_header: 'Alege un program',
     speed_header: 'Viteză',
 
@@ -33,12 +32,6 @@ ro = {   // <----- Set to ISO 639-1 language code (see https://en.wikipedia.org/
         contribute: 'Contribuie la traducere'
     },
     // Reading plans
-    plan: {
-        label: 'Programul de citire',
-        placeholder: 'Programul de citire',
-        title: 'Alege programul de citire',
-        description: 'Schimbarea planului nu nu schimbă statutul de citire a planului actual.'
-    },
     plans: {
         // In the order the chapters appear in the Bible
         sequential: 'În ordine',
@@ -62,12 +55,6 @@ ro = {   // <----- Set to ISO 639-1 language code (see https://en.wikipedia.org/
         description: 'Totul dinainte va fi setat ca citit și totul ce urmează ca necitit.',
         question: 'Vrei să setezi totul dinainte ca citit și totul ce urmează ca necitit?'
 
-    },
-    startDate: {
-        label: 'Data de începere',
-        placeholder: 'Data de începere',
-        title: 'Setează data de începere',
-        description: 'Setează o dată de începere pentru a monitoriza progresul la citirea Bibliei.'
     },
     WOLlinks: {
         label: 'Dezactivează linkuri în WOL',
@@ -135,15 +122,9 @@ ro = {   // <----- Set to ISO 639-1 language code (see https://en.wikipedia.org/
 
         'How it Works',
         'Read right away from the beginning and check each section that you have read.',
-
-        'If you want to start at the current position of your Bible reading, select',
-        'Continue at',
-        'on the',
-        'Settings',
-        'page.',
-
-        'After finishing reading the Bible select',
-        'Start Over',
+        'If you want to start at the current position of your Bible reading, select \
+            "Continue at" on the Settings page.',
+        'After finishing reading the Bible select "Start Over" on the Settings page.',
     ],
 
     // Stored Data
