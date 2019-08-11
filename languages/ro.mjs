@@ -91,11 +91,7 @@ export default {
 
     // ----------  Translating below section is OPTIONAL  vvvvvvvvvv
     //
-    // Events
-    // (see Chart of outstanding historical dates at
-    //      https://wol.jw.org/en/wol/d/r1/lp-e/1101990130#h=252)
-    //
-    // Symbols: a. for “after”; b. for “before”; c. for “circa,” or “about.”
+    // Symbols: a. for “after”; b. for “before”; c. for “circa”, or “about”.
     //          C.E. for Common Era; B.C.E. for Before Common Era
     symbols: {
         'a.': 'd.',
