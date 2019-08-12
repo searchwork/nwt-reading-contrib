@@ -56,10 +56,6 @@ export default {
         description: 'All previous sections will be marked as read and those following as unread.',
         question: 'Do you want to set all previous sections to read and those following to unread?'
     },
-    WOLlinks: {
-        label: 'Disable WOL Links',
-        description: 'Links to the New World Translation of the Holy Scriptures in the Watchtower Online Library will be opend in the web browser.'
-    },
     help: 'Help',
     legal: 'Legal',
     version: 'Version',

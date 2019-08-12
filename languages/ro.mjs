@@ -57,10 +57,6 @@ export default {
         question: 'Vrei să setezi totul dinainte ca citit și totul ce urmează ca necitit?'
 
     },
-    WOLlinks: {
-        label: 'Dezactivează linkuri în WOL',
-        description: 'Linkuri în Sfintele Scripturi Traducerea lumii noi în Watchtower Bibliotecă Online vor fi deschise în browserul.'
-    },
     help: 'Ajutor',
     legal: 'Juridice',
     version: 'Versiune',

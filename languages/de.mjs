@@ -56,10 +56,6 @@ export default {
         description: 'Alles davor wird auf gelesen und alles danach auf ungelesen gesetzt.',
         question: 'Möchtest du alles davor auf gelesen und alles danach auf ungelesen setzen?'
     },
-    WOLlinks: {
-        label: 'WOL Links deaktivieren',
-        description: 'Links in Die Bibel. Neue-Welt-Übersetzung in der Wachtturm Online-Bibliothek werden im Browser geöffnet.'
-    },
     help: 'Hilfe',
     legal: 'Rechtliches',
     version: 'Version',

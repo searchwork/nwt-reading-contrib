@@ -7,7 +7,7 @@
 //
 export default {
     // Name of the language
-    me: 'Português brasileiro',
+    me: 'Português (Brasil)',
 
     // Pages
     pages: {
@@ -55,10 +55,6 @@ export default {
         title: 'Selecione onde você quer iniciar a leitura',
         description: 'Todas as seções anteriores serão marcadas como lidas e as seguintes como não lidas.',
         question: 'Deseja definir todas as seções anteriores como lidas e as seguintes para não lidas?'
-    },
-    WOLlinks: {
-        label: 'Disabilitar WOL Links',
-        description: 'Links para a Tradução do Novo Mundo da Bíblia Sagrada na Watchtower Online Library serão abertos no seu navegador.'
     },
     help: 'Ajuda',
     legal: 'Legal',

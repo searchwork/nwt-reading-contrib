@@ -56,10 +56,6 @@ export default {
         description: 'Tutte le sezioni precedenti saranno contrassegnate come già lette e quelle che seguono come non lette.',
         question: 'Vuoi impostare tutte le sezioni precedenti come da leggere e quelle che seguono come non lette?'
     },
-    WOLlinks: {
-        label: 'Disabilitare i collegamenti WOL',
-        description: 'Links to the New World Translation of the Holy Scriptures in the Watchtower Online Library will be opend in the web browser.'
-    },
     help: 'Aiuto',
     legal: 'Legale',
     version: 'Versione',
