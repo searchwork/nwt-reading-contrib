@@ -7,83 +7,82 @@
 //
 export default {
     // Name of the language
-    me: 'Română',
+    me: 'Español',
 
     // Pages
     pages: {
-        schedule: 'Programul',
-        settings: 'Setările',
-        help: 'Ajutor (engleză)',
-        storedData: 'Datele stocate (engleză)',
-        privacyPolicy: 'Politica de confidențialitate (engleză)'
+        schedule: 'Programa',
+        settings: 'Ajustes',
+        help: 'Ayuda (ingles)',
+        storedData: 'Datos almacenados (ingles)',
+        privacyPolicy: 'Politica de privacidad (ingles)'
     },
 
     // Schedule page
     //
-    plans_header: 'Alege un program',
+    plans_header: 'Seleccione un plan de lectura',
     // Reading plans
     plans: {
         // In the order the chapters appear in the Bible
-        sequential: 'În ordine',
+        sequential: 'Secuencial',
         // In the order the Bible books were written
-        written: 'Cum au fost scrise',
+        written: 'Según se completaron',
         // In the order the events happened
-        chronological: 'cronologic (experimental)',
+        chronological: 'Cronológico (experimental)',
         // Christian Greek Scriptures only
-        greekScriptures: 'Scripturile Grecești Creștine'
+        greekScriptures: 'Escrituras Griegas Cristianas'
     },
-    speed_header: 'Viteză',
+    speed_header: 'Velocidad',
 
     // Settings page 
     //
-    english: 'engleză',
+    english: 'Ingles',
     language: {
-        label: 'Limba',
-        placeholder: 'Limba',
-        title: 'Alege limba',
-        contribute: 'Contribuie la traducere'
+        label: 'Idioma',
+        placeholder: 'Idioma',
+        title: 'Seleccione un idioma',
+        contribute: 'Contribuir traducción'
     },
     startOver: {
-        label: 'Reîncepe',
-        title: 'Reîncepe',
-        description: 'Șterge marcajele de citit și setează astăzi ca data de începere.',
-        question: 'Vrei să ștergi marcajele de citit și să setezi astăzi ca data de începere?'
+        label: 'Comenzar de nuevo',
+        title: 'Comenzar de nuevo',
+        description: 'Borra el estado de lectura y establece hoy como fecha de inicio.',
+        question: 'Desea borrar el estado de lectura y establecer hoy como fecha de inicio?'
     },
     continueAt: {
-        label: 'Continuă la',
-        placeholder: '<selectează>',
-        title: 'Setează unde vrei să continui citirea',
-        description: 'Totul dinainte va fi setat ca citit și totul ce urmează ca necitit.',
-        question: 'Vrei să setezi totul dinainte ca citit și totul ce urmează ca necitit?'
-
+        label: 'Continuar en',
+        placeholder: '<seleccionar>',
+        title: 'Selecciona donde continuar con la lectura',
+        description: 'Todas las secciones anteriores serán marcadas como leídas y las siguientes como no leídas.',
+        question: 'Desea establecer todas las secciones anteriores marcadas como leídas y las siguientes como no leídas?'
     },
-    help: 'Ajutor',
-    legal: 'Juridice',
-    version: 'Versiune',
+    help: 'Ayuda',
+    legal: 'Legal',
+    version: 'Versión',
 
     // Bible
     //
     // Ordered list of the Bible books
     books: [
-        'Geneza', 'Exodul', 'Leviticul', 'Numerele', 'Deuteronomul',
-        'Iosua', 'Judecătorii', 'Rut', '1 Samuel', '2 Samuel',
-        '1 Regi', '2 Regi', '1 Cronici', '2 Cronici',
-        'Ezra', 'Neemia', 'Estera', 'Iov',
-        'Psalmii', 'Proverbele', 'Eclesiastul', 'Cântarea cântărilor',
-        'Isaia', 'Ieremia', 'Plângerile', 'Ezechiel', 'Daniel',
-        'Osea', 'Ioel', 'Amos', 'Obadia', 'Iona', 'Mica', 'Naum',
-        'Habacuc', 'Țefania', 'Hagai', 'Zaharia', 'Maleahi',
-        'Matei', 'Marcu', 'Luca', 'Ioan', 'Faptele',
-        'Romani', '1 Corinteni', '2 Corinteni',
-        'Galateni', 'Efeseni', 'Filipeni', 'Coloseni',
-        '1 Tesaloniceni', '2 Tesaloniceni', '1 Timotei', '2 Timotei',
-        'Tit', 'Filimon', 'Evrei', 'Iacov',
-        '1 Petru', '2 Petru', '1 Ioan', '2 Ioan', '3 Ioan',
-        'Iuda', 'Revelația'
+        'Génesis', 'Éxodo', 'Levítico', 'Números', 'Deuteronomio',
+        'Josué', 'Jueces', 'Rut', '1 Samuel', '2 Samuel',
+        '1 Reyes', '2 Reyes', '1 Crónicas', '2 Crónicas',
+        'Esdras', 'Nehemías', 'Ester', 'Job',
+        'Salmos', 'Proverbios', 'Eclesiastés', 'El Cantar de los Cantares',
+        'Isaías', 'Jeremías', 'Lamentaciones', 'Ezequiel', 'Daniel',
+        'Oseas', 'Joel', 'Amós', 'Abdías', 'Jonás', 'Miqueas', 'Nahúm',
+        'Habacuc', 'Sofonías', 'Ageo', 'Zacarías', 'Malaquías',
+        'Mateo', 'Marcos', 'Lucas', 'Juan', 'Hechos',
+        'Romanos', '1 Corintios', '2 Corintios',
+        'Gálatas', 'Efesios', 'Filipenses', 'Colosenses',
+        '1 Tesalonicenses', '2 Tesalonicenses', '1 Timoteo', '2 Timoteo',
+        'Tito', 'Filemón', 'Hebreos', 'Santiago',
+        '1 Pedro', '2 Pedro', '1 Juan', '2 Juan', '3 Juan',
+        'Judas', 'Apocalipsis'
     ],
     // Base link to the Bible in the Watchtower Online Library in this language
     // On the Bible tab open Genesis, chapter 1, and use the link without "/1/1#study=discover"
-    baseURL: 'https://wol.jw.org/ro/wol/b/r34/lp-m/bi12/M/2006',
+    baseURL: 'https://wol.jw.org/es/wol/b/r4/lp-s/nwt/S/2019',
 
 
     // ----------  Translating below section is OPTIONAL  vvvvvvvvvv
@@ -91,20 +90,20 @@ export default {
     // Below information can be found in the WOL at the provided link
     // after switching to your language
     chart: {
-        URL: 'https://wol.jw.org/ro/wol/d/r34/lp-m/1101990130#h=255',
-        text: 'Evenimente bazate pe',
-        book: '„Toată Scriptura este inspirată de Dumnezeu şi de folos“',
-        chapter: 'Studiul numărul 3 — Plasarea evenimentelor în timp',
-        caption: 'Date istorice remarcabile',
+        URL: 'https://wol.jw.org/es/wol/d/r4/lp-s/1101990130#h=251',
+        text: 'Basado en',
+        book: '“Toda Escritura es inspirada de Dios y provechosa”',
+        chapter: 'Estudio número 3: Sucesos fechados en la corriente del tiempo',
+        caption: 'Cuadro de fechas históricas sobresalientes',
     },
     // Symbols: a. for “after”; b. for “before”; c. for “circa”, or “about”.
     //          C.E. for Common Era; B.C.E. for Before Common Era
     symbols: {
-        'a.': 'd.',
-        'b.': 'î.',
-        'c.': 'a.',
-        'C.E.': 'e.n.',
-        'B.C.E.': 'î.e.n.'
+        'a.': 'a.',
+        'b.': 'd.',
+        'c.': 'c.',
+        'C.E.': 'C.E.',
+        'B.C.E.': 'a.C.E.'
     },
 
 

@@ -3,7 +3,7 @@
 // (c) Searchwork.org
 // Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 //
-// Template for app version 1.0.2. Any missing item will fall back to english
+// Template for app version 1.2.3. Any missing item will fall back to english
 //
 export default {
     // Name of the language
@@ -81,11 +81,21 @@ export default {
         'Judas', 'Apocaplise'
     ],
     // Base link to the Bible in the Watchtower Online Library in this language
-    baseURL: 'https://wol.jw.org/pt/wol/b/r5/lp-t/nwt/T/2015',
+    // On the Bible tab open Genesis, chapter 1, and use the link without "/1/1#study=discover"
+    baseURL: 'https://wol.jw.org/pt/wol/b/r5/lp-t/nwtsty/T/2019',
 
 
     // ----------  Translating below section is OPTIONAL  vvvvvvvvvv
     //
+    // Below information can be found in the WOL at the provided link
+    // after switching to your language
+    chart: {
+        URL: 'https://wol.jw.org/pt/wol/d/r5/lp-t/1101990130#h=254',
+        text: 'Eventos baseados em',
+        book: '“Toda Escritura é Inspirada por Deus e Proveitosa”',
+        chapter: 'Estudo Número 3—Localização dos eventos na corrente do tempo',
+        caption: 'Tabela de datas históricas notáveis',
+    },
     // Symbols: a. for “after”; b. for “before”; c. for “circa”, or “about”.
     //          C.E. for Common Era; B.C.E. for Before Common Era
     symbols: {
@@ -94,13 +104,6 @@ export default {
         'c.': 'c.',
         'C.E.': 'EC',
         'B.C.E.': 'AEC'
-    },
-    chart: {
-        text: 'Eventos baseados em',
-        book: '“Toda Escritura é Inspirada por Deus e Proveitosa”',
-        chapter: 'Estudo Número 3—Localização dos eventos na corrente do tempo',
-        caption: 'Tabela de datas históricas notáveis',
-        URL: 'https://wol.jw.org/pt/wol/d/r5/lp-t/1101990130#h=254',
     },
 
 

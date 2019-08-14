@@ -3,7 +3,7 @@
 // (c) Searchwork.org
 // Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 //
-// Template for app version 1.0.2. Any missing item will fall back to english
+// Template for app version 1.2.3. Any missing item will fall back to english
 //
 export default {
     // Name of the language
@@ -81,11 +81,21 @@ export default {
         'Giuda', 'Rivelazione'
     ],
     // Base link to the Bible in the Watchtower Online Library in this language
+    // On the Bible tab open Genesis, chapter 1, and use the link without "/1/1#study=discover"
     baseURL: 'https://wol.jw.org/it/wol/b/r6/lp-i/nwtsty/I/2019',
 
 
     // ----------  Translating below section is OPTIONAL  vvvvvvvvvv
     //
+    // Below information can be found in the WOL at the provided link
+    // after switching to your language
+    chart: {
+        URL: 'https://wol.jw.org/it/wol/d/r6/lp-i/1101990130#h=253',
+        text: 'Basati su',
+        book: '“Tutta la Scrittura è ispirata da Dio e utile”',
+        chapter: 'Studio numero 3: Come collocare gli avvenimenti nel tempo',
+        caption: 'Elenco di importanti date storiche',
+    },
     // Symbols: a. for “after”; b. for “before”; c. for “circa”, or “about”.
     //          C.E. for Common Era; B.C.E. for Before Common Era
     symbols: {
@@ -94,13 +104,6 @@ export default {
         'ca.': 'ca.',
         'E.V.': 'E.V.',
         'a.E.V.': 'a.E.V.'
-    },
-    chart: {
-        text: 'Basati su',
-        book: '“Tutta la Scrittura è ispirata da Dio e utile”',
-        chapter: 'Studio numero 3: Come collocare gli avvenimenti nel tempo',
-        caption: 'Elenco di importanti date storiche',
-        URL: 'https://wol.jw.org/it/wol/d/r6/lp-i/1101990130#h=253',
     },
 
 

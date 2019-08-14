@@ -3,7 +3,7 @@
 // (c) Searchwork.org
 // Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 //
-// Template for app version 1.0.2. Any missing item will fall back to english
+// Template for app version 1.2.3. Any missing item will fall back to english
 //
 export default {
     // Name of the language
@@ -81,11 +81,21 @@ export default {
         'Judas', 'Offenbarung'
     ],
     // Base link to the Bible in the Watchtower Online Library in this language
+    // On the Bible tab open Genesis, chapter 1, and use the link without "/1/1#study=discover"
     baseURL: 'https://wol.jw.org/de/wol/b/r10/lp-x/nwt/X/2018',
 
 
     // ----------  Translating below section is OPTIONAL  vvvvvvvvvv
     //
+    // Below information can be found in the WOL at the provided link
+    // after switching to your language
+    chart: {
+        URL: 'https://wol.jw.org/de/wol/d/r10/lp-x/1101990130#h=254',
+        text: 'Ereignisse basierend auf',
+        book: '„Die ganze Schrift ist von Gott inspiriert und nützlich“',
+        chapter: 'Studie 3 — Ereignisse in den Strom der Zeit einordnen',
+        caption: 'Tabelle hervorragender Geschichtsdaten',
+    },
     // Symbols: a. for “after”; b. for “before”; c. for “circa”, or “about”.
     //          C.E. for Common Era; B.C.E. for Before Common Era
     symbols: {
@@ -94,13 +104,6 @@ export default {
         'c.': 'um',
         'C.E.': 'u. Z.',
         'B.C.E.': 'v. u. Z.'
-    },
-    chart: {
-        text: 'Ereignisse basierend auf',
-        book: '„Die ganze Schrift ist von Gott inspiriert und nützlich“',
-        chapter: 'Studie 3 — Ereignisse in den Strom der Zeit einordnen',
-        caption: 'Tabelle hervorragender Geschichtsdaten',
-        URL: 'https://wol.jw.org/de/wol/d/r10/lp-x/1101990130#h=254',
     },
 
 

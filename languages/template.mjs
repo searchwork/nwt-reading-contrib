@@ -3,7 +3,7 @@
 // (c) Searchwork.org
 // Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 //
-// Template for app version 1.0.2. Any missing item will fall back to english
+// Template for app version 1.2.3. Any missing item will fall back to english
 //
 export default {
     // Name of the language
@@ -81,11 +81,21 @@ export default {
         'Jude', 'Revelation'
     ],
     // Base link to the Bible in the Watchtower Online Library in this language
+    // On the Bible tab open Genesis, chapter 1, and use the link without "/1/1#study=discover"
     baseURL: 'https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/E/2019',
 
 
     // ----------  Translating below section is OPTIONAL  vvvvvvvvvv
     //
+    // Below information can be found in the WOL at the provided link
+    // after switching to your language
+    chart: {
+        URL: 'https://wol.jw.org/en/wol/d/r1/lp-e/1101990130#h=252',
+        text: 'Events are based on',
+        book: '“All Scripture Is Inspired of God and Beneficial”',
+        chapter: 'Study Number 3—Measuring Events in the Stream of Time',
+        caption: 'Chart of outstanding historical dates',
+    },
     // Symbols: a. for “after”; b. for “before”; c. for “circa”, or “about”.
     //          C.E. for Common Era; B.C.E. for Before Common Era
     symbols: {
@@ -94,13 +104,6 @@ export default {
         'c.': 'c.',
         'C.E.': 'C.E.',
         'B.C.E.': 'B.C.E.'
-    },
-    chart: {
-        text: 'Events are based on',
-        book: '“All Scripture Is Inspired of God and Beneficial”',
-        chapter: 'Study Number 3—Measuring Events in the Stream of Time',
-        caption: 'Chart of outstanding historical dates',
-        URL: 'https://wol.jw.org/en/wol/d/r1/lp-e/1101990130#h=252',
     },
 
 
