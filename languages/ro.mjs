@@ -1,6 +1,6 @@
 // Language resources
 //
-// (c) Searchwork.org
+// (c) Redaio.org
 // Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 //
 // Template for app version 1.2.3. Any missing item will fall back to english
@@ -56,6 +56,10 @@ export default {
         description: 'Totul dinainte va fi setat ca citit și totul ce urmează ca necitit.',
         question: 'Vrei să setezi totul dinainte ca citit și totul ce urmează ca necitit?'
 
+    },
+    WOLreferences: {
+        label: 'WOL simboluri pentru referințe',
+        description: 'Afișează simboluri pentru referințe în Watchtower BIBLIOTECĂ ONLINE.',
     },
     help: 'Ajutor',
     legal: 'Juridice',
@@ -136,7 +140,7 @@ export default {
         'The NWT Reading mobile application (the “PRODUCT”) does not collect \
         any personal information. All data is stored locally.',
 
-        'SearchWork.org, does not allow advertising companies to collect data through \
+        'Redaio.org, does not allow advertising companies to collect data through \
         our PRODUCT for ad targeting. \
         We do not share data collected by this PRODUCT with other organizations \
         for any purpose.',

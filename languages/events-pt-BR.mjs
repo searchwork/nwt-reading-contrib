@@ -1,6 +1,6 @@
 // Events language resources
 //
-// (c) Searchwork.org
+// (c) Redaio.org
 // Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 //
 // Template for app version 1.0.2. Any missing item will fall back to english

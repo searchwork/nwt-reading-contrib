@@ -1,6 +1,6 @@
 // Language resources
 //
-// (c) Searchwork.org
+// (c) Redaio.org
 // Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 //
 // Template for app version 1.2.3. Any missing item will fall back to english
@@ -55,6 +55,10 @@ export default {
         title: 'Selecione onde você quer iniciar a leitura',
         description: 'Todas as seções anteriores serão marcadas como lidas e as seguintes como não lidas.',
         question: 'Deseja definir todas as seções anteriores como lidas e as seguintes para não lidas?'
+    },
+    WOLreferences: {
+        label: 'WOL símbolos de referência',
+        description: 'Exibir símbolos de referência na BIBLIOTECA ON-LINE da Torre de Vigia.',
     },
     help: 'Ajuda',
     legal: 'Legal',
@@ -135,7 +139,7 @@ export default {
         'O aplicativo móvel NWT Reading (o “PRODUTO”) não coleta \
         nenhuma informação pessoal. Todos os dados são armazenados localmente.',
 
-        'SearchWork.org, não permite que empresas de publicidade coletem dados de \
+        'Redaio.org, não permite que empresas de publicidade coletem dados de \
         nosso PRODUTO para segmentação de anúncios. \
         Não compartilhamos dados coletados por este PRODUTO com outras organizações \
         para qualquer finalidade.',

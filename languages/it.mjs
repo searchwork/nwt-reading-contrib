@@ -1,6 +1,6 @@
 // Language resources
 //
-// (c) Searchwork.org
+// (c) Redaio.org
 // Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 //
 // Template for app version 1.2.3. Any missing item will fall back to english
@@ -55,6 +55,10 @@ export default {
         title: 'Scegli da dove continuare con la lettura',
         description: 'Tutte le sezioni precedenti saranno contrassegnate come già lette e quelle che seguono come non lette.',
         question: 'Vuoi impostare tutte le sezioni precedenti come da leggere e quelle che seguono come non lette?'
+    },
+    WOLreferences: {
+        label: 'WOL riferimenti e note',
+        description: 'Visualizza i riferimenti e note nella BIBLIOTECA ONLINE Watchtower.',
     },
     help: 'Aiuto',
     legal: 'Legale',
@@ -135,7 +139,7 @@ export default {
         'The NWT Reading mobile application (the “PRODUCT”) does not collect \
         any personal information. All data is stored locally.',
 
-        'SearchWork.org, does not allow advertising companies to collect data through \
+        'Redaio.org, does not allow advertising companies to collect data through \
         our PRODUCT for ad targeting. \
         We do not share data collected by this PRODUCT with other organizations \
         for any purpose.',
