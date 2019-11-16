@@ -1,9 +1,9 @@
 // Language resources
 //
-// (c) Redaio.org
+// (c) Searchwork.org
 // Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 //
-// Template for app version 1.2.3. Any missing item will fall back to english
+// Template for app version 2.0.0. Any missing item will fall back to english
 //
 export default {
     // Name of the language
@@ -30,7 +30,7 @@ export default {
         // In the order the events happened
         chronological: 'Chronological (experimental)',
         // Christian Greek Scriptures only
-        greekScriptures: 'Christian Greek Scriptures'
+        //greekScriptures: 'Christian Greek Scriptures'
     },
     speed_header: 'Speed',
 
@@ -85,8 +85,11 @@ export default {
         'Jude', 'Revelation'
     ],
     // Base link to the Bible in the Watchtower Online Library in this language
-    // On the Bible tab open Genesis, chapter 1, and use the link without "/1/1#study=discover"
+    // (On the Bible tab open Genesis, chapter 1, and use the link without "/1/1#study=discover")
     baseURL: 'https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/E/2019',
+    // Base link to the Bible at jw.org in this language
+    // (On the Bible tab open Genesis, chapter 1, and use the link without "/genesis/1/")
+    //baseURL: 'https://www.jw.org/en/library/bible/nwt/books',
 
 
     // ----------  Translating below section is OPTIONAL  vvvvvvvvvv
@@ -139,7 +142,7 @@ export default {
         'The NWT Reading mobile application (the “PRODUCT”) does not collect \
         any personal information. All data is stored locally.',
 
-        'Redaio.org, does not allow advertising companies to collect data through \
+        'Searchwork.org, does not allow advertising companies to collect data through \
         our PRODUCT for ad targeting. \
         We do not share data collected by this PRODUCT with other organizations \
         for any purpose.',

@@ -1,9 +1,9 @@
 // Language resources
 //
-// (c) Redaio.org
+// (c) Searchwork.org
 // Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 //
-// Template for app version 1.2.3. Any missing item will fall back to english
+// Template for app version 2.0.0. Any missing item will fall back to english
 //
 export default {
     // Name of the language
@@ -86,7 +86,7 @@ export default {
         'Iuda', 'Revelația'
     ],
     // Base link to the Bible in the Watchtower Online Library in this language
-    // On the Bible tab open Genesis, chapter 1, and use the link without "/1/1#study=discover"
+    // (On the Bible tab open Genesis, chapter 1, and use the link without "/1/1#study=discover")
     baseURL: 'https://wol.jw.org/ro/wol/b/r34/lp-m/bi12/M/2006',
 
 
@@ -140,7 +140,7 @@ export default {
         'The NWT Reading mobile application (the “PRODUCT”) does not collect \
         any personal information. All data is stored locally.',
 
-        'Redaio.org, does not allow advertising companies to collect data through \
+        'Searchwork.org, does not allow advertising companies to collect data through \
         our PRODUCT for ad targeting. \
         We do not share data collected by this PRODUCT with other organizations \
         for any purpose.',

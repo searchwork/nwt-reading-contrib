@@ -1,9 +1,9 @@
 // Language resources
 //
-// (c) Redaio.org
+// (c) Searchwork.org
 // Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 //
-// Template for app version 1.2.3. Any missing item will fall back to english
+// Template for app version 2.0.0. Any missing item will fall back to english
 //
 export default {
     // Name of the language
@@ -85,7 +85,7 @@ export default {
         'Judas', 'Apocaplise'
     ],
     // Base link to the Bible in the Watchtower Online Library in this language
-    // On the Bible tab open Genesis, chapter 1, and use the link without "/1/1#study=discover"
+    // (On the Bible tab open Genesis, chapter 1, and use the link without "/1/1#study=discover")
     baseURL: 'https://wol.jw.org/pt/wol/b/r5/lp-t/nwtsty/T/2019',
 
 
@@ -139,7 +139,7 @@ export default {
         'O aplicativo móvel NWT Reading (o “PRODUTO”) não coleta \
         nenhuma informação pessoal. Todos os dados são armazenados localmente.',
 
-        'Redaio.org, não permite que empresas de publicidade coletem dados de \
+        'Searchwork.org, não permite que empresas de publicidade coletem dados de \
         nosso PRODUTO para segmentação de anúncios. \
         Não compartilhamos dados coletados por este PRODUTO com outras organizações \
         para qualquer finalidade.',
