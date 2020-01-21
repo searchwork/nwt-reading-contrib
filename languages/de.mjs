@@ -84,10 +84,10 @@ export default {
         '1. Petrus', '2. Petrus', '1. Johannes', '2. Johannes', '3. Johannes',
         'Judas', 'Offenbarung'
     ],
-    // Base link to the Bible in the Watchtower Online Library in this language
-    // (On the Bible tab open Genesis, chapter 1, and use the link without "/1/1#study=discover")
-    baseURL: 'https://wol.jw.org/de/wol/b/r10/lp-x/nwt/X/2018',
-
+    // Base link to the Bible at jw.org in this language
+    // (On the Bible tab open Genesis, chapter 1, and use the link without "/genesis/1/")
+    baseURL: 'https://www.jw.org/de/bibliothek/bibel/nwt/bibelbuecher',
+    
 
     // ----------  Translating below section is OPTIONAL  vvvvvvvvvv
     //

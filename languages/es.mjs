@@ -84,9 +84,9 @@ export default {
         '1 Pedro', '2 Pedro', '1 Juan', '2 Juan', '3 Juan',
         'Judas', 'Apocalipsis'
     ],
-    // Base link to the Bible in the Watchtower Online Library in this language
-    // (On the Bible tab open Genesis, chapter 1, and use the link without "/1/1#study=discover")
-    baseURL: 'https://wol.jw.org/es/wol/b/r4/lp-s/nwt/S/2019',
+    // Base link to the Bible at jw.org in this language
+    // (On the Bible tab open Genesis, chapter 1, and use the link without "/genesis/1/")
+    baseURL: 'https://www.jw.org/es/biblioteca/biblia/nwt/libros',
 
 
     // ----------  Translating below section is OPTIONAL  vvvvvvvvvv

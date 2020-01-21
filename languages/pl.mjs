@@ -1,4 +1,4 @@
-// Language resources
+﻿// Language resources
 //
 // (c) Searchwork.org
 // Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
@@ -7,86 +7,86 @@
 //
 export default {
     // Name of the language
-    me: 'Italiano',
+    me: 'Polski',
 
     // Pages
     pages: {
-        schedule: 'Programma',
-        settings: 'Impostazioni',
-        help: 'Aiuto (inglese)',
-        storedData: 'Dati memorizzati (inglese)',
-        privacyPolicy: 'Politica sulla riservatezza (inglese)'
+        schedule: 'Harmonogram',
+        settings: 'Ustawienia',
+        help: 'Pomoc',
+        storedData: 'Przechowywanie danych',
+        privacyPolicy: 'Polityka Prywatności'
     },
 
     // Schedule page
     //
-    plans_header: 'Seleziona un piano di lettura',
+    plans_header: 'Wybierz plan czytania',
     // Reading plans
     plans: {
         // In the order the chapters appear in the Bible
-        sequential: 'Sequenziale',
+        sequential: 'Sekwencyjny',
         // In the order the Bible books were written
-        written: 'Come è scritto',
+        written: 'Jak napisano',
         // In the order the events happened
-        chronological: 'Cronologico (sperimentale)',
+        chronological: 'Chronologiczny (experymentalny)',
         // Christian Greek Scriptures only
-        greekScriptures: 'Scritture Greche Cristiane'
+        //greekScriptures: 'Chrześcijańskie Pisma Greckie'
     },
-    speed_header: 'Velocità',
+    speed_header: 'Tempo',
 
     // Settings page 
     //
-    english: 'inglese',
+    english: 'Angielski',
     language: {
-        label: 'Lingua',
-        placeholder: 'Lingua',
-        title: 'Scegli una lingua',
-        contribute: 'Contribuire alla traduzione'
+        label: 'Język',
+        placeholder: 'Język',
+        title: 'Wybierz język',
+        contribute: 'Przyczyń sie do tłumaczenia'
     },
     startOver: {
-        label: 'Ricomincia',
-        title: 'Ricomincia',
-        description: 'Azzera il programma di lettura e imposta oggi come data di inizio.',
-        question: 'Vuoi azzerare il programma di lettura e impostare oggi come data di inizio?'
+        label: 'Zacznij od nowa',
+        title: 'Zacznij od nowa',
+        description: 'Wyczyść status czytania i ustaw dzisiaj jako datę rozpoczęcia.',
+        question: 'Czy chcesz wyczyścić status czytania i ustawić dzisiaj jako datę rozpoczęcia??'
     },
     continueAt: {
-        label: 'Continua da',
-        placeholder: '<seleziona>',
-        title: 'Scegli da dove continuare con la lettura',
-        description: 'Tutte le sezioni precedenti saranno contrassegnate come già lette e quelle che seguono come non lette.',
-        question: 'Vuoi impostare tutte le sezioni precedenti come da leggere e quelle che seguono come non lette?'
+        label: 'Kontynuuj od',
+        placeholder: '<wybierz>',
+        title: 'Wybierz, gdzie kontynuować czytanie',
+        description: 'Wszystkie poprzednie sekcje zostaną oznaczone jako przeczytane, a następne jako nieprzeczytane.',
+        question: 'Czy chcesz ustawić wszystkie poprzednie sekcje do czytania, a te do nieprzeczytanych??'
     },
     WOLreferences: {
-        label: 'WOL riferimenti e note',
-        description: 'Visualizza i riferimenti e note nella BIBLIOTECA ONLINE Watchtower.',
+        label: 'Odsyłacze w WOL',
+        description: 'Pokaż odsyłacze w BIBLIOTECE INTERNETOWEJ Strażnicy.',
     },
-    help: 'Aiuto',
-    legal: 'Legale',
-    version: 'Versione',
+    help: 'Pomoc',
+    legal: 'Prawne',
+    version: 'Wersja',
 
     // Bible
     //
     // Ordered list of the Bible books
     books: [
-        'Genesi', 'Esodo', 'Levitico', 'Numeri', 'Deuteronomio',
-        'Giosuè', 'Giudici', 'Rut', '1 Samuele', '2 Samuele',
-        '1 Re', '2 Re', '1 Cronache', '2 Cronache',
-        'Esdra', 'Neemia', 'Ester', 'Giobbe',
-        'Salmi', 'Proverbi', 'Ecclesiaste', 'Cantico dei Cantici',
-        'Isaia', 'Geremia', 'Lamentazioni', 'Ezechiele', 'Daniele',
-        'Osea', 'Gioele', 'Amos', 'Abdia', 'Giona', 'Michea', 'Naum',
-        'Abacuc', 'Sofonia', 'Aggeo', 'Zaccaria', 'Malachia',
-        'Matteo', 'Marco', 'Luca', 'Giovanni', 'Atti',
-        'Romani', '1 Corinti', '2 Corinti',
-        'Galati', 'Efesini', 'Filippesi', 'Colossesi',
-        '1 Tessalonicesi', '2 Tessalonicesi', '1 Timoteo', '2 Timoteo',
-        'Tito', 'Filemone', 'Ebrei', 'Giacomo',
-        '1 Pietro', '2 Pietro', '1 Giovanni', '2 Giovanni', '3 Giovanni',
-        'Giuda', 'Rivelazione'
+        'Rodzaju', 'Wyjścia', 'Kapłańska', 'Liczb', 'Powtórzonego Prawa',
+        'Jozuego', 'Sędziów', 'Rut', '1 Samuela', '2 Samuela',
+        '1 Królów', '2 Królów', '1 Kronik', '2 Kronik',
+        'Ezdrasza', 'Nehemiasza', 'Estery', 'Hioba',
+        'Psalmy', 'Przysłów', 'Kaznodziei', 'Pieśń nad Pieśniami',
+        'Izajasza', 'Jeremiasza', 'Lamentacje', 'Ezechiela', 'Daniela',
+        'Ozeasza', 'Joela', 'Amosa', 'Abdiasza', 'Jonasza', 'Micheasza', 'Nahuma',
+        'Habakuka', 'Sofoniasza', 'Aggeusza', 'Zachariasza', 'Malachiasza',
+        'Mateusza', 'Marka', 'Łukasza', 'Jana', 'Dzieje',
+        'Rzymian', '1 Koryntian', '2 Koryntian',
+        'Galatów', 'Efezjan', 'Filipian', 'Kolosan',
+        '1 Tesaloniczan', '2 Tesaloniczan', '1 Tymoteusza', '2 Tymoteusza',
+        'Tytusa', 'Filemona', 'Hebrajczyków', 'Jakuba',
+        '1 Piotra', '2 Piotra', '1 Jana', '2 Jana', '3 Jana',
+        'Judy', 'Objawienie'
     ],
     // Base link to the Bible at jw.org in this language
     // (On the Bible tab open Genesis, chapter 1, and use the link without "/genesis/1/")
-    baseURL: 'https://www.jw.org/it/biblioteca-digitale/bibbia/bibbia-per-lo-studio/libri',
+    baseURL: 'https://www.jw.org/pl/biblioteka/biblia/nwt/ksiegi-biblijne',
 
 
     // ----------  Translating below section is OPTIONAL  vvvvvvvvvv
@@ -94,20 +94,20 @@ export default {
     // Below information can be found in the WOL at the provided link
     // after switching to your language
     chart: {
-        URL: 'https://wol.jw.org/it/wol/d/r6/lp-i/1101990130#h=253',
-        text: 'Basati su',
-        book: '“Tutta la Scrittura è ispirata da Dio e utile”',
-        chapter: 'Studio numero 3: Come collocare gli avvenimenti nel tempo',
-        caption: 'Elenco di importanti date storiche',
+        URL: 'https://wol.jw.org/pl/wol/d/r12/lp-p/1101990130#h=252',
+        text: 'Zdarzenia oparte na',
+        book: '“Całe Pismo natchnione przez Boga i pożyteczne”',
+        chapter: 'Studium 3- Umiejscawianie wydarzeń w strumieniu czasu',
+        caption: 'Ważne daty historyczne',
     },
     // Symbols: a. for “after”; b. for “before”; c. for “circa”, or “about”.
     //          C.E. for Common Era; B.C.E. for Before Common Era
     symbols: {
-        'a.': 'a.',
-        'd.': 'd.',
-        'ca.': 'ca.',
-        'E.V.': 'E.V.',
-        'a.E.V.': 'a.E.V.'
+        'po.': 'po.',
+        'przed.': 'przed.',
+        'ok.': 'ok.',
+        'n.e.': 'n.e.',
+        'p.n.e.': 'p.n.e.'
     },
 
 

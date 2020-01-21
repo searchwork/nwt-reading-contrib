@@ -84,12 +84,9 @@ export default {
         '1 Peter', '2 Peter', '1 John', '2 John', '3 John',
         'Jude', 'Revelation'
     ],
-    // Base link to the Bible in the Watchtower Online Library in this language
-    // (On the Bible tab open Genesis, chapter 1, and use the link without "/1/1#study=discover")
-    baseURL: 'https://wol.jw.org/en/wol/b/r1/lp-e/nwtsty/E/2019',
     // Base link to the Bible at jw.org in this language
     // (On the Bible tab open Genesis, chapter 1, and use the link without "/genesis/1/")
-    //baseURL: 'https://www.jw.org/en/library/bible/nwt/books',
+    baseURL: 'https://www.jw.org/en/library/bible/study-bible/books',
 
 
     // ----------  Translating below section is OPTIONAL  vvvvvvvvvv

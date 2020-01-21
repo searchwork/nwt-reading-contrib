@@ -85,9 +85,9 @@ export default {
         '1 Petru', '2 Petru', '1 Ioan', '2 Ioan', '3 Ioan',
         'Iuda', 'Revelația'
     ],
-    // Base link to the Bible in the Watchtower Online Library in this language
-    // (On the Bible tab open Genesis, chapter 1, and use the link without "/1/1#study=discover")
-    baseURL: 'https://wol.jw.org/ro/wol/b/r34/lp-m/bi12/M/2006',
+    // Base link to the Bible at jw.org in this language
+    // (On the Bible tab open Genesis, chapter 1, and use the link without "/genesis/1/")
+    baseURL: 'https://www.jw.org/ro/biblioteca/biblia/bi12/carti',
 
 
     // ----------  Translating below section is OPTIONAL  vvvvvvvvvv
