@@ -3,7 +3,7 @@
 // (c) Searchwork.org
 // Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 //
-// Template for app version 2.0.0. Any missing item will fall back to english
+// Template for app version 3.2.2. Any missing item will fall back to english
 //
 export default {
     // Name of the language
@@ -28,11 +28,19 @@ export default {
         // In the order the Bible books were written
         written: 'Wie aufgezeichnet',
         // In the order the events happened
-        chronological: 'Chronologisch (experimentell)',
-        // Christian Greek Scriptures only
-        greekScriptures: 'Christliche griechische Schriften'
+        chronological: 'Chronologisch'
     },
-    speed_header: 'Geschwindigkeit',
+    durations_header: 'Dauer',
+    durations: {
+        '6m': 'in 6 Monaten',
+        '1y': 'in 1 Jahr',
+        '2y': 'in 2 Jahren',
+        '4y': 'in 4 Jahren'
+    },    
+    setRead: {
+        label: 'Gelesen setzen',
+        question: 'Alles davor wird auf gelesen und alles danach auf ungelesen gesetzt.',
+    },    
 
     // Settings page 
     //
@@ -46,24 +54,40 @@ export default {
     startOver: {
         label: 'Neu beginnen',
         title: 'Neu beginnen',
-        description: 'Setzt den Lesestatus zurück und das Anfangsdatum auf heute.',
-        question: 'Möchtest du den Lesestatus zurücksetzen und das Anfangsdatum auf heute setzen?'
+        description: 'Setzt den Lesestatus zurück.',
+        question: 'Möchtest du den Lesestatus zurücksetzen?'
     },
-    continueAt: {
-        label: 'Fortsetzen bei',
-        placeholder: '<auswählen>',
-        title: 'Wähle wo du mit dem Lesen fortsetzen möchtest.',
-        description: 'Alles davor wird auf gelesen und alles danach auf ungelesen gesetzt.',
-        question: 'Möchtest du alles davor auf gelesen und alles danach auf ungelesen setzen?'
+    resetEndDate: {
+        label: 'Enddatum zurücksetzen',
+        description: 'Passe das Enddatum dem aktuellen Lesestatus an.',
+        question: 'Möchtest du das Enddatum auf dem aktuellan Lesestatus anpassen?',
     },
-    WOLreferences: {
-        label: 'WOL Verweissymbole',
-        description: 'Anzeigen der Verweissymbole in der Wachtturm ONLINE-BIBLIOTHEK.',
+    withEndDate: {
+        label: 'Mit Enddatum',
+        description: 'Verfolge das tägliche Bibellesen mit Enddatum.',
     },
-    help: 'Hilfe',
+    showEvents: {
+        label: 'Zeige Ereignisse (experimentell)',
+        // Below information can be found in the WOL at the provided link
+        // after switching to your language
+        URL: 'https://wol.jw.org/de/wol/d/r10/lp-x/1101990130#h=254',
+        text: 'Ereignisse basierend auf',
+        title: '„Die ganze Schrift ist von Gott inspiriert und nützlich“',
+        chapter: 'Studie 3 — Ereignisse in den Strom der Zeit einordnen',
+        caption: 'Tabelle hervorragender Geschichtsdaten',
+    },
+    showLocations: {
+        label: 'Zeige Orte (experimentell)',
+        URL: 'https://wol.jw.org/de/wol/d/r10/lp-x/1102003130',
+        text: 'Zeige Verweise auf Orte in der Broschüre',
+        title: '„Das gute Land sehen“',
+        legend: 'Zur Legende siehe den',
+        caption: 'Kartenindex',
+    },
     legal: 'Rechtliches',
     version: 'Version',
-
+    
+    help: 'Hilfe',
     // Bible
     //
     // Ordered list of the Bible books
@@ -72,7 +96,7 @@ export default {
         'Josua', 'Richter', 'Ruth', '1. Samuel', '2. Samuel',
         '1. Könige', '2. Könige', '1. Chronika', '2. Chronika',
         'Esra', 'Nehemia', 'Esther', 'Hiob',
-        'Psalm', 'Sprüche', 'Prediger', 'Hohes Lied',
+        'Psalmen', 'Sprüche', 'Prediger', 'Hohes Lied',
         'Jesaja', 'Jeremia', 'Klagelieder', 'Hesekiel', 'Daniel',
         'Hosea', 'Joel', 'Amos', 'Obadja', 'Jona', 'Micha', 'Nahum',
         'Habakuk', 'Zephanja', 'Haggai', 'Sacharja', 'Maleachi',
@@ -84,22 +108,15 @@ export default {
         '1. Petrus', '2. Petrus', '1. Johannes', '2. Johannes', '3. Johannes',
         'Judas', 'Offenbarung'
     ],
+    // Singular form of Psalms used in references like "Psalm 23" 
+    psalm: 'Psalm',
     // Base link to the Bible at jw.org in this language
     // (On the Bible tab open Genesis, chapter 1, and use the link without "/genesis/1/")
-    baseURL: 'https://www.jw.org/de/bibliothek/bibel/nwt/bibelbuecher',
+    baseURL: 'https://www.jw.org/de/bibliothek/bibel/studienbibel/buecher',
     
 
     // ----------  Translating below section is OPTIONAL  vvvvvvvvvv
     //
-    // Below information can be found in the WOL at the provided link
-    // after switching to your language
-    chart: {
-        URL: 'https://wol.jw.org/de/wol/d/r10/lp-x/1101990130#h=254',
-        text: 'Ereignisse basierend auf',
-        book: '„Die ganze Schrift ist von Gott inspiriert und nützlich“',
-        chapter: 'Studie 3 — Ereignisse in den Strom der Zeit einordnen',
-        caption: 'Tabelle hervorragender Geschichtsdaten',
-    },
     // Symbols: a. for “after”; b. for “before”; c. for “circa”, or “about”.
     //          C.E. for Common Era; B.C.E. for Before Common Era
     symbols: {
@@ -120,9 +137,8 @@ export default {
             New World Translation of the Holy Scriptures of Jehovah\'s Witnesses.',
 
         'How it Works',
-        'Read right away from the beginning and check each section that you have read.',
-        'If you want to start at the current position of your Bible reading, select \
-            "Continue at" on the Settings page.',
+        'Choose a reading plan and the duration at the top of the page.',
+        'Check the section that you have read.',
         'After finishing reading the Bible select "Start Over" on the Settings page.',
     ],
 

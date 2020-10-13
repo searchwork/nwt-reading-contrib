@@ -3,12 +3,12 @@
 // (c) Searchwork.org
 // Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 //
-// Template for app version 2.0.0. Any missing item will fall back to english
+// Template for app version 3.2.2. Any missing item will fall back to english
 //
 export default {
     // Name of the language
     me: 'Español',
-
+    
     // Pages
     pages: {
         schedule: 'Programa',
@@ -17,7 +17,7 @@ export default {
         storedData: 'Datos almacenados (ingles)',
         privacyPolicy: 'Politica de privacidad (ingles)'
     },
-
+    
     // Schedule page
     //
     plans_header: 'Seleccione un plan de lectura',
@@ -28,12 +28,20 @@ export default {
         // In the order the Bible books were written
         written: 'Según se completaron',
         // In the order the events happened
-        chronological: 'Cronológico (experimental)',
-        // Christian Greek Scriptures only
-        greekScriptures: 'Escrituras Griegas Cristianas'
+        chronological: 'Cronológico'
     },
-    speed_header: 'Velocidad',
-
+    durations_header: 'duración',
+    durations: {
+        '6m': 'dentro de 6 meses',
+        '1y': 'dentro de 1 año',
+        '2y': 'dentro de 2 años',
+        '4y': 'dentro de 4 años'
+    },
+    setRead: {
+        label: 'Establecer leído',
+        question: 'Desea establecer todas las secciones anteriores marcadas como leídas y las siguientes como no leídas?'
+    },
+    
     // Settings page 
     //
     english: 'Ingles',
@@ -46,19 +54,35 @@ export default {
     startOver: {
         label: 'Comenzar de nuevo',
         title: 'Comenzar de nuevo',
-        description: 'Borra el estado de lectura y establece hoy como fecha de inicio.',
-        question: 'Desea borrar el estado de lectura y establecer hoy como fecha de inicio?'
+        description: 'Borra el estado de lectura.',
+        question: 'Desea borrar el estado de lectura?'
     },
-    continueAt: {
-        label: 'Continuar en',
-        placeholder: '<seleccionar>',
-        title: 'Selecciona donde continuar con la lectura',
-        description: 'Todas las secciones anteriores serán marcadas como leídas y las siguientes como no leídas.',
-        question: 'Desea establecer todas las secciones anteriores marcadas como leídas y las siguientes como no leídas?'
+    resetEndDate: {  // ** ToDo **
+        label: 'Reset end date',
+        description: 'Reset the end date to be on time with reading.',
+        question: 'Reset the end date to be on time with reading?',
     },
-    WOLreferences: {
-        label: 'WOL símbolos de las notas',
-        description: 'Mostrar símbolos de las notas en Watchtower BIBLIOTECA EN LÍNEA.',
+    withEndDate: {  // ** ToDo **
+        label: 'With End Date',
+        description: 'Track daily reading with an end date.',
+    },
+    showEvents: {
+        label: 'Mostrar eventos (experimental)',
+        // Below information can be found in the WOL at the provided link
+        // after switching to your language
+        URL: 'https://wol.jw.org/es/wol/d/r4/lp-s/1101990130#h=251',
+        text: 'Basado en',
+        title: '“Toda Escritura es inspirada de Dios y provechosa”',
+        chapter: 'Estudio número 3: Sucesos fechados en la corriente del tiempo',
+        caption: 'Cuadro de fechas históricas sobresalientes',
+    },
+    showLocations: {
+        label: 'Show Locations (experimental)',
+        URL: 'https://wol.jw.org/en/wol/d/r1/lp-e/1102003130',
+        text: 'Show location references to the brosure',
+        title: '“See the Good Land”',
+        legend: 'For a legend see the',
+        caption: 'Index to Maps',
     },
     help: 'Ayuda',
     legal: 'Legal',
@@ -84,6 +108,8 @@ export default {
         '1 Pedro', '2 Pedro', '1 Juan', '2 Juan', '3 Juan',
         'Judas', 'Apocalipsis'
     ],
+    // Singular form of Psalms used in references like "Psalm 23" 
+    psalm: 'Salmo',
     // Base link to the Bible at jw.org in this language
     // (On the Bible tab open Genesis, chapter 1, and use the link without "/genesis/1/")
     baseURL: 'https://www.jw.org/es/biblioteca/biblia/nwt/libros',
@@ -91,15 +117,6 @@ export default {
 
     // ----------  Translating below section is OPTIONAL  vvvvvvvvvv
     //
-    // Below information can be found in the WOL at the provided link
-    // after switching to your language
-    chart: {
-        URL: 'https://wol.jw.org/es/wol/d/r4/lp-s/1101990130#h=251',
-        text: 'Basado en',
-        book: '“Toda Escritura es inspirada de Dios y provechosa”',
-        chapter: 'Estudio número 3: Sucesos fechados en la corriente del tiempo',
-        caption: 'Cuadro de fechas históricas sobresalientes',
-    },
     // Symbols: a. for “after”; b. for “before”; c. for “circa”, or “about”.
     //          C.E. for Common Era; B.C.E. for Before Common Era
     symbols: {
@@ -120,9 +137,8 @@ export default {
             New World Translation of the Holy Scriptures of Jehovah\'s Witnesses.',
 
         'How it Works',
-        'Read right away from the beginning and check each section that you have read.',
-        'If you want to start at the current position of your Bible reading, select \
-            "Continue at" on the Settings page.',
+        'Choose a reading plan and the duration at the top of the page.',
+        'Check the section that you have read.',
         'After finishing reading the Bible select "Start Over" on the Settings page.',
     ],
 

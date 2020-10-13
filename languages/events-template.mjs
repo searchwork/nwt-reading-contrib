@@ -3,7 +3,7 @@
 // (c) Searchwork.org
 // Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 //
-// Template for app version 1.0.2. Any missing item will fall back to english
+// Template for app version 3.2.2. Any missing item will fall back to english
 //
 export default {
     //
@@ -139,7 +139,6 @@ export default {
     '1513 B.C.E.-c': { description: 'Law covenant made at Mt. Sinai (Horeb)', ref: 'Ex. 24:6-8' },
     '1513 B.C.E.-d': { description: 'End of the 430-year period from validating of Abrahamic covenant', ref: 'Gal. 3:17; Ex. 12:40' },
     '1513 B.C.E.-e': { description: 'Moses compiles Genesis in the wilderness; Bible writing begins', ref: 'John 5:46' },
-
     '1512 B.C.E.-a': { description: 'Tabernacle construction completed', ref: 'Ex. 40:17' },
     '1512 B.C.E.-b': { description: 'Installation of the Aaronic priesthood', ref: 'Lev. 8:34-36' },
     '1512 B.C.E.-c': { description: 'Moses completes Exodus and Leviticus', ref: 'Lev. 27:34; Num. 1:1' },
@@ -167,6 +166,7 @@ export default {
     'c. 1020 B.C.E.': { description: 'Solomon completes The Song of Solomon', ref: 'Song of Sol. 1:1' },
     'b. 1000 B.C.E.': { description: 'Solomon completes the book of Ecclesiastes', ref: 'Eccl. 1:1' },
     '997 B.C.E.': { description: 'Rehoboam succeeds Solomon; kingdom split; Jeroboam begins reign as king of Israel', ref: '1 Ki. 11:43; 1 Ki 12:19, 20' },
+
     '993 B.C.E.': { description: 'Shishak invades Judah and takes treasures from temple', ref: '1 Ki. 14:25, 26' },
     '980 B.C.E.': { description: 'Abijam (Abijah) succeeds Rehoboam as king of Judah', ref: '1 Ki. 15:1, 2' },
     '977 B.C.E.': { description: 'Asa succeeds Abijam as king of Judah', ref: '1 Ki. 15:9, 10' },

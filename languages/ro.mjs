@@ -3,7 +3,7 @@
 // (c) Searchwork.org
 // Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 //
-// Template for app version 2.0.0. Any missing item will fall back to english
+// Template for app version 3.2.2. Any missing item will fall back to english
 //
 export default {
     // Name of the language
@@ -28,11 +28,19 @@ export default {
         // In the order the Bible books were written
         written: 'Cum au fost scrise',
         // In the order the events happened
-        chronological: 'cronologic (experimental)',
-        // Christian Greek Scriptures only
-        greekScriptures: 'Scripturile Grecești Creștine'
+        chronological: 'cronologic'
     },
-    speed_header: 'Viteză',
+    durations_header: 'durată',
+    durations: {
+        '6m': 'în 6 luni',
+        '1y': 'în 1 an',
+        '2y': 'în 2 ani',
+        '4y': 'în 4 ani'
+    },
+    setRead: {
+        label: 'Setează citit',
+        question: 'Vrei să setezi totul dinainte ca citit și totul ce urmează ca necitit?'
+    },
 
     // Settings page 
     //
@@ -46,20 +54,35 @@ export default {
     startOver: {
         label: 'Reîncepe',
         title: 'Reîncepe',
-        description: 'Șterge marcajele de citit și setează astăzi ca data de începere.',
-        question: 'Vrei să ștergi marcajele de citit și să setezi astăzi ca data de începere?'
+        description: 'Șterge marcajele de citit.',
+        question: 'Vrei să ștergi marcajele de citit?'
     },
-    continueAt: {
-        label: 'Continuă la',
-        placeholder: '<selectează>',
-        title: 'Setează unde vrei să continui citirea',
-        description: 'Totul dinainte va fi setat ca citit și totul ce urmează ca necitit.',
-        question: 'Vrei să setezi totul dinainte ca citit și totul ce urmează ca necitit?'
-
+    resetEndDate: {
+        label: 'Resetează termenul',
+        description: 'Setează termenul pentru a fi la zi cu citire.',
+        question: 'Vrei să setezi termenul pentru a fi la zi cu citire?',
     },
-    WOLreferences: {
-        label: 'WOL simboluri pentru referințe',
-        description: 'Afișează simboluri pentru referințe în Watchtower BIBLIOTECĂ ONLINE.',
+    withEndDate: {
+        label: 'Cu termen',
+        description: 'Urmărește citirea zilnică cu un termen.',
+    },
+    showEvents: {
+        label: 'Afișează evenimente (experimental)',
+        // Below information can be found in the WOL at the provided link
+        // after switching to your language
+        URL: 'https://wol.jw.org/ro/wol/d/r34/lp-m/1101990130#h=255',
+        text: 'Evenimente bazate pe',
+        title: '„Toată Scriptura este inspirată de Dumnezeu şi de folos“',
+        chapter: 'Studiul numărul 3 — Plasarea evenimentelor în timp',
+        caption: 'Date istorice remarcabile',
+    },
+    showLocations: {
+        label: 'Afișează locații (experimental)',
+        URL: 'https://wol.jw.org/ro/wol/d/r34/lp-m/1102003130',
+        text: 'Afișează referințe la locații în broșura',
+        title: '„Să vedem ţara aceea bună!“',
+        legend: 'Pentru o legendă vezi',
+        caption: 'Indexul hărţilor',
     },
     help: 'Ajutor',
     legal: 'Juridice',
@@ -85,6 +108,8 @@ export default {
         '1 Petru', '2 Petru', '1 Ioan', '2 Ioan', '3 Ioan',
         'Iuda', 'Revelația'
     ],
+    // Singular form of Psalms used in references like "Psalm 23" 
+    psalm: 'Psalmul',
     // Base link to the Bible at jw.org in this language
     // (On the Bible tab open Genesis, chapter 1, and use the link without "/genesis/1/")
     baseURL: 'https://www.jw.org/ro/biblioteca/biblia/bi12/carti',
@@ -92,15 +117,6 @@ export default {
 
     // ----------  Translating below section is OPTIONAL  vvvvvvvvvv
     //
-    // Below information can be found in the WOL at the provided link
-    // after switching to your language
-    chart: {
-        URL: 'https://wol.jw.org/ro/wol/d/r34/lp-m/1101990130#h=255',
-        text: 'Evenimente bazate pe',
-        book: '„Toată Scriptura este inspirată de Dumnezeu şi de folos“',
-        chapter: 'Studiul numărul 3 — Plasarea evenimentelor în timp',
-        caption: 'Date istorice remarcabile',
-    },
     // Symbols: a. for “after”; b. for “before”; c. for “circa”, or “about”.
     //          C.E. for Common Era; B.C.E. for Before Common Era
     symbols: {
@@ -121,9 +137,8 @@ export default {
             New World Translation of the Holy Scriptures of Jehovah\'s Witnesses.',
 
         'How it Works',
-        'Read right away from the beginning and check each section that you have read.',
-        'If you want to start at the current position of your Bible reading, select \
-            "Continue at" on the Settings page.',
+        'Choose a reading plan and the duration at the top of the page.',
+        'Check the section that you have read.',
         'After finishing reading the Bible select "Start Over" on the Settings page.',
     ],
 

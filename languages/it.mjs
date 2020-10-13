@@ -3,12 +3,12 @@
 // (c) Searchwork.org
 // Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 //
-// Template for app version 2.0.0. Any missing item will fall back to english
+// Template for app version 3.2.2. Any missing item will fall back to english
 //
 export default {
     // Name of the language
     me: 'Italiano',
-
+    
     // Pages
     pages: {
         schedule: 'Programma',
@@ -17,7 +17,7 @@ export default {
         storedData: 'Dati memorizzati (inglese)',
         privacyPolicy: 'Politica sulla riservatezza (inglese)'
     },
-
+    
     // Schedule page
     //
     plans_header: 'Seleziona un piano di lettura',
@@ -28,12 +28,20 @@ export default {
         // In the order the Bible books were written
         written: 'Come è scritto',
         // In the order the events happened
-        chronological: 'Cronologico (sperimentale)',
-        // Christian Greek Scriptures only
-        greekScriptures: 'Scritture Greche Cristiane'
+        chronological: 'Cronologico'
     },
-    speed_header: 'Velocità',
-
+    durations_header: 'durata',
+    durations: {
+        '6m': 'tra 6 mesi',
+        '1y': 'tra 1 anno',
+        '2y': 'tra 2 anni',
+        '4y': 'tra 4 anni'
+    },
+    setRead: {
+        label: 'Impostare letto',
+        question: 'Vuoi impostare tutte le sezioni precedenti come da leggere e quelle che seguono come non lette?'
+    },
+    
     // Settings page 
     //
     english: 'inglese',
@@ -49,16 +57,32 @@ export default {
         description: 'Azzera il programma di lettura e imposta oggi come data di inizio.',
         question: 'Vuoi azzerare il programma di lettura e impostare oggi come data di inizio?'
     },
-    continueAt: {
-        label: 'Continua da',
-        placeholder: '<seleziona>',
-        title: 'Scegli da dove continuare con la lettura',
-        description: 'Tutte le sezioni precedenti saranno contrassegnate come già lette e quelle che seguono come non lette.',
-        question: 'Vuoi impostare tutte le sezioni precedenti come da leggere e quelle che seguono come non lette?'
+    resetEndDate: {  // ** ToDo **
+        label: 'Reset end date',
+        description: 'Reset the end date to be on time with reading.',
+        question: 'Reset the end date to be on time with reading?',
     },
-    WOLreferences: {
-        label: 'WOL riferimenti e note',
-        description: 'Visualizza i riferimenti e note nella BIBLIOTECA ONLINE Watchtower.',
+    withEndDate: {  // ** ToDo **
+        label: 'With End Date',
+        description: 'Track daily reading with an end date.',
+    },
+    showEvents: {
+        label: 'Mostra eventi (sperimentale)',
+        // Below information can be found in the WOL at the provided link
+        // after switching to your language
+        URL: 'https://wol.jw.org/it/wol/d/r6/lp-i/1101990130#h=253',
+        text: 'Basati su',
+        title: '“Tutta la Scrittura è ispirata da Dio e utile”',
+        chapter: 'Studio numero 3: Come collocare gli avvenimenti nel tempo',
+        caption: 'Elenco di importanti date storiche',
+    },
+    showLocations: {
+        label: 'Show Locations (experimental)',
+        URL: 'https://wol.jw.org/en/wol/d/r1/lp-e/1102003130',
+        text: 'Show location references to the brosure',
+        title: '“See the Good Land”',
+        legend: 'For a legend see the',
+        caption: 'Index to Maps',
     },
     help: 'Aiuto',
     legal: 'Legale',
@@ -84,6 +108,8 @@ export default {
         '1 Pietro', '2 Pietro', '1 Giovanni', '2 Giovanni', '3 Giovanni',
         'Giuda', 'Rivelazione'
     ],
+    // Singular form of Psalms used in references like "Psalm 23" 
+    psalm: 'Salmo',
     // Base link to the Bible at jw.org in this language
     // (On the Bible tab open Genesis, chapter 1, and use the link without "/genesis/1/")
     baseURL: 'https://www.jw.org/it/biblioteca-digitale/bibbia/bibbia-per-lo-studio/libri',
@@ -91,15 +117,6 @@ export default {
 
     // ----------  Translating below section is OPTIONAL  vvvvvvvvvv
     //
-    // Below information can be found in the WOL at the provided link
-    // after switching to your language
-    chart: {
-        URL: 'https://wol.jw.org/it/wol/d/r6/lp-i/1101990130#h=253',
-        text: 'Basati su',
-        book: '“Tutta la Scrittura è ispirata da Dio e utile”',
-        chapter: 'Studio numero 3: Come collocare gli avvenimenti nel tempo',
-        caption: 'Elenco di importanti date storiche',
-    },
     // Symbols: a. for “after”; b. for “before”; c. for “circa”, or “about”.
     //          C.E. for Common Era; B.C.E. for Before Common Era
     symbols: {
@@ -120,9 +137,8 @@ export default {
             New World Translation of the Holy Scriptures of Jehovah\'s Witnesses.',
 
         'How it Works',
-        'Read right away from the beginning and check each section that you have read.',
-        'If you want to start at the current position of your Bible reading, select \
-            "Continue at" on the Settings page.',
+        'Choose a reading plan and the duration at the top of the page.',
+        'Check the section that you have read.',
         'After finishing reading the Bible select "Start Over" on the Settings page.',
     ],
 

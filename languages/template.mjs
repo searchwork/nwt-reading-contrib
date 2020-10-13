@@ -3,7 +3,7 @@
 // (c) Searchwork.org
 // Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 //
-// Template for app version 2.0.0. Any missing item will fall back to english
+// Template for app version 3.2.2. Any missing item will fall back to english
 //
 export default {
     // Name of the language
@@ -17,7 +17,7 @@ export default {
         storedData: 'Stored Data',
         privacyPolicy: 'Privacy Policy'
     },
-
+    
     // Schedule page
     //
     plans_header: 'Select a reading plan',
@@ -28,12 +28,20 @@ export default {
         // In the order the Bible books were written
         written: 'As written',
         // In the order the events happened
-        chronological: 'Chronological (experimental)',
-        // Christian Greek Scriptures only
-        //greekScriptures: 'Christian Greek Scriptures'
+        chronological: 'Chronological'
     },
-    speed_header: 'Speed',
-
+    durations_header: 'Duration',
+    durations: {
+        '6m': 'in 6 months',
+        '1y': 'in 1 year',
+        '2y': 'in 2 years',
+        '4y': 'in 4 years'
+    },
+    setRead: {
+        label: 'Set Read',
+        question: 'Do you want to set all previous sections to read and those following to unread?'
+    },
+    
     // Settings page 
     //
     english: 'English',
@@ -46,19 +54,33 @@ export default {
     startOver: {
         label: 'Start Over',
         title: 'Start over',
-        description: 'Clear the reading status and set today as start date.',
-        question: 'Do you want to clear the reading status and set today as start date?'
+        description: 'Clear the reading status.',
+        question: 'Do you want to clear the reading status?'
     },
-    continueAt: {
-        label: 'Continue at',
-        placeholder: '<select>',
-        title: 'Select where to continue with the reading',
-        description: 'All previous sections will be marked as read and those following as unread.',
-        question: 'Do you want to set all previous sections to read and those following to unread?'
+    resetEndDate: {
+        label: 'Reset End Date',
+        description: 'Reset the end date to be on time with reading.',
+        question: 'Reset the end date to be on time with reading?',
     },
-    WOLreferences: {
-        label: 'WOL References',
-        description: 'Display references in the Watchtower ONLINE LIBRARY.',
+    withEndDate: {
+        label: 'With End Date',
+        description: 'Track daily reading with an end date.',
+    },
+    showEvents: {
+        label: 'Show Events (experimental)',
+        URL: 'https://wol.jw.org/en/wol/d/r1/lp-e/1101990130#h=252',
+        text: 'Events are based on',
+        title: '“All Scripture Is Inspired of God and Beneficial”',
+        chapter: 'Study Number 3—Measuring Events in the Stream of Time',
+        caption: 'Chart of outstanding historical dates',
+    },
+    showLocations: {
+        label: 'Show Locations (experimental)',
+        URL: 'https://wol.jw.org/en/wol/d/r1/lp-e/1102003130',
+        text: 'Show location references to the brosure',
+        title: '“See the Good Land”',
+        legend: 'For a legend see the',
+        caption: 'Index to Maps',
     },
     help: 'Help',
     legal: 'Legal',
@@ -84,6 +106,8 @@ export default {
         '1 Peter', '2 Peter', '1 John', '2 John', '3 John',
         'Jude', 'Revelation'
     ],
+    // Singular form of Psalms used in references like "Psalm 23" 
+    psalm: 'Psalm',
     // Base link to the Bible at jw.org in this language
     // (On the Bible tab open Genesis, chapter 1, and use the link without "/genesis/1/")
     baseURL: 'https://www.jw.org/en/library/bible/study-bible/books',
@@ -91,15 +115,6 @@ export default {
 
     // ----------  Translating below section is OPTIONAL  vvvvvvvvvv
     //
-    // Below information can be found in the WOL at the provided link
-    // after switching to your language
-    chart: {
-        URL: 'https://wol.jw.org/en/wol/d/r1/lp-e/1101990130#h=252',
-        text: 'Events are based on',
-        book: '“All Scripture Is Inspired of God and Beneficial”',
-        chapter: 'Study Number 3—Measuring Events in the Stream of Time',
-        caption: 'Chart of outstanding historical dates',
-    },
     // Symbols: a. for “after”; b. for “before”; c. for “circa”, or “about”.
     //          C.E. for Common Era; B.C.E. for Before Common Era
     symbols: {
@@ -120,9 +135,8 @@ export default {
             New World Translation of the Holy Scriptures of Jehovah\'s Witnesses.',
 
         'How it Works',
-        'Read right away from the beginning and check each section that you have read.',
-        'If you want to start at the current position of your Bible reading, select \
-            "Continue at" on the Settings page.',
+        'Choose a reading plan and the duration at the top of the page.',
+        'Check the section that you have read.',
         'After finishing reading the Bible select "Start Over" on the Settings page.',
     ],
 

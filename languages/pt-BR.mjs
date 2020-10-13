@@ -3,7 +3,7 @@
 // (c) Searchwork.org
 // Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 //
-// Template for app version 2.0.0. Any missing item will fall back to english
+// Template for app version 3.2.2. Any missing item will fall back to english
 //
 export default {
     // Name of the language
@@ -28,11 +28,19 @@ export default {
         // In the order the Bible books were written
         written: 'Data de conclusão',
         // In the order the events happened
-        chronological: 'Cronológica (experimental)',
-        // Christian Greek Scriptures only
-        greekScriptures: 'Escrituras Gregas Cristãs'
+        chronological: 'Cronológica'
     },
-    speed_header: 'Velocidade',
+    durations_header: 'duração',
+    durations: {
+        '6m': 'em 6 meses',
+        '1y': 'em 1 ano',
+        '2y': 'em 2 anos',
+        '4y': 'em 4 anos'
+    },
+    setRead: {
+        label: 'Definido lido',
+        question: 'Deseja definir todas as seções anteriores como lidas e as seguintes para não lidas?'
+    },
 
     // Settings page 
     //
@@ -46,19 +54,35 @@ export default {
     startOver: {
         label: 'Começar novamente',
         title: 'Começar novamente',
-        description: 'Apague todo o status de leitura e selecione hoje como data para início.',
+        description: 'Apague todo o status de leitura.',
         question: 'Tem certeza que quer apagar todo o status de leitura?'
     },
-    continueAt: {
-        label: 'Iniciar em',
-        placeholder: '<selecione>',
-        title: 'Selecione onde você quer iniciar a leitura',
-        description: 'Todas as seções anteriores serão marcadas como lidas e as seguintes como não lidas.',
-        question: 'Deseja definir todas as seções anteriores como lidas e as seguintes para não lidas?'
+    resetEndDate: {  // ** ToDo **
+        label: 'Reset end date',
+        description: 'Reset the end date to be on time with reading.',
+        question: 'Reset the end date to be on time with reading?',
     },
-    WOLreferences: {
-        label: 'WOL símbolos de referência',
-        description: 'Exibir símbolos de referência na BIBLIOTECA ON-LINE da Torre de Vigia.',
+    withEndDate: {  // ** ToDo **
+        label: 'With End Date',
+        description: 'Track daily reading with an end date.',
+    },
+    showEvents: {
+        label: 'Mostrar eventos (experimental)',
+        // Below information can be found in the WOL at the provided link
+        // after switching to your language
+        URL: 'https://wol.jw.org/pt/wol/d/r5/lp-t/1101990130#h=254',
+        text: 'Eventos baseados em',
+        title: '“Toda Escritura é Inspirada por Deus e Proveitosa”',
+        chapter: 'Estudo Número 3—Localização dos eventos na corrente do tempo',
+        caption: 'Tabela de datas históricas notáveis',
+    },
+    showLocations: {
+        label: 'Show Locations (experimental)',
+        URL: 'https://wol.jw.org/en/wol/d/r1/lp-e/1102003130',
+        text: 'Show location references to the brosure',
+        title: '“See the Good Land”',
+        legend: 'For a legend see the',
+        caption: 'Index to Maps',
     },
     help: 'Ajuda',
     legal: 'Legal',
@@ -84,6 +108,8 @@ export default {
         '1 Pedro', '2 Pedro', '1 João', '2 João', '3 João',
         'Judas', 'Apocaplise'
     ],
+    // Singular form of Psalms used in references like "Psalm 23" 
+    psalm: 'Salmo',
     // Base link to the Bible at jw.org in this language
     // (On the Bible tab open Genesis, chapter 1, and use the link without "/genesis/1/")
     baseURL: 'https://www.jw.org/pt/biblioteca/biblia/biblia-de-estudo/livros',
@@ -91,15 +117,6 @@ export default {
 
     // ----------  Translating below section is OPTIONAL  vvvvvvvvvv
     //
-    // Below information can be found in the WOL at the provided link
-    // after switching to your language
-    chart: {
-        URL: 'https://wol.jw.org/pt/wol/d/r5/lp-t/1101990130#h=254',
-        text: 'Eventos baseados em',
-        book: '“Toda Escritura é Inspirada por Deus e Proveitosa”',
-        chapter: 'Estudo Número 3—Localização dos eventos na corrente do tempo',
-        caption: 'Tabela de datas históricas notáveis',
-    },
     // Symbols: a. for “after”; b. for “before”; c. for “circa”, or “about”.
     //          C.E. for Common Era; B.C.E. for Before Common Era
     symbols: {
@@ -114,15 +131,14 @@ export default {
     // Help
     //
     // Help
-    helpPage: [
+   helpPage: [
         'Sobre',
         'NWT Reading ajuda você a acompanhar o seu programa de leitura da \
             Tradução do Novo Mundo da Bíblia Sagrada das Testemunhas de Jeová.',
 
         'Como funciona',
-        'Leia imediatamente desde o início e verifique cada seção que você leu.',
-        'Se você quer começar na posição atual da sua leitura da Bíblia, selecione \
-            "Iniciar em" na página Opções.',
+        'Choose a reading plan and the duration at the top of the page.',
+        'Check the section that you have read.',
         'Depois de terminar de ler a Bíblia, selecione "Começar novamente" na página Opções.',
     ],
 

@@ -3,7 +3,7 @@
 // (c) Searchwork.org
 // Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 //
-// Template for app version 2.0.0. Any missing item will fall back to english
+// Template for app version 3.2.2. Any missing item will fall back to english
 //
 export default {
     // Name of the language
@@ -28,11 +28,19 @@ export default {
         // In the order the Bible books were written
         written: 'Jak napisano',
         // In the order the events happened
-        chronological: 'Chronologiczny (experymentalny)',
-        // Christian Greek Scriptures only
-        //greekScriptures: 'Chrześcijańskie Pisma Greckie'
+        chronological: 'Chronologiczny'
     },
-    speed_header: 'Tempo',
+    durations_header: 'Trwanie',
+    durations: {
+        '6m': 'za 6 miesięcy',
+        '1y': 'za 1 rok',
+        '2y': 'za 2 lata',
+        '4y': 'za 4 lata'
+    },
+    setRead: {
+        label: 'Ustaw przeczytane',
+        question: 'Czy chcesz ustawić wszystkie poprzednie sekcje do czytania, a te do nieprzeczytanych??'
+    },
 
     // Settings page 
     //
@@ -46,19 +54,35 @@ export default {
     startOver: {
         label: 'Zacznij od nowa',
         title: 'Zacznij od nowa',
-        description: 'Wyczyść status czytania i ustaw dzisiaj jako datę rozpoczęcia.',
-        question: 'Czy chcesz wyczyścić status czytania i ustawić dzisiaj jako datę rozpoczęcia??'
+        description: 'Wyczyść status czytania.',
+        question: 'Czy chcesz wyczyścić status czytania?'
     },
-    continueAt: {
-        label: 'Kontynuuj od',
-        placeholder: '<wybierz>',
-        title: 'Wybierz, gdzie kontynuować czytanie',
-        description: 'Wszystkie poprzednie sekcje zostaną oznaczone jako przeczytane, a następne jako nieprzeczytane.',
-        question: 'Czy chcesz ustawić wszystkie poprzednie sekcje do czytania, a te do nieprzeczytanych??'
+    resetEndDate: {  // ** ToDo **
+        label: 'Reset end date',
+        description: 'Reset the end date to be on time with reading.',
+        question: 'Reset the end date to be on time with reading?',
     },
-    WOLreferences: {
-        label: 'Odsyłacze w WOL',
-        description: 'Pokaż odsyłacze w BIBLIOTECE INTERNETOWEJ Strażnicy.',
+    withEndDate: {  // ** ToDo **
+        label: 'With End Date',
+        description: 'Track daily reading with an end date.',
+    },
+    showEvents: {
+        label: 'Pokaż zdarzenia (eksperymentalne)',
+        // Below information can be found in the WOL at the provided link
+        // after switching to your language
+        URL: 'https://wol.jw.org/pl/wol/d/r12/lp-p/1101990130#h=252',
+        text: 'Zdarzenia oparte na',
+        title: '“Całe Pismo natchnione przez Boga i pożyteczne”',
+        chapter: 'Studium 3- Umiejscawianie wydarzeń w strumieniu czasu',
+        caption: 'Ważne daty historyczne',
+    },
+    showLocations: {
+        label: 'Show Locations (experimental)',
+        URL: 'https://wol.jw.org/en/wol/d/r1/lp-e/1102003130',
+        text: 'Show location references to the brosure',
+        title: '“See the Good Land”',
+        legend: 'For a legend see the',
+        caption: 'Index to Maps',
     },
     help: 'Pomoc',
     legal: 'Prawne',
@@ -84,6 +108,8 @@ export default {
         '1 Piotra', '2 Piotra', '1 Jana', '2 Jana', '3 Jana',
         'Judy', 'Objawienie'
     ],
+    // Singular form of Psalms used in references like "Psalm 23" 
+    psalm: 'Psalm',
     // Base link to the Bible at jw.org in this language
     // (On the Bible tab open Genesis, chapter 1, and use the link without "/genesis/1/")
     baseURL: 'https://www.jw.org/pl/biblioteka/biblia/nwt/ksiegi-biblijne',
@@ -91,15 +117,6 @@ export default {
 
     // ----------  Translating below section is OPTIONAL  vvvvvvvvvv
     //
-    // Below information can be found in the WOL at the provided link
-    // after switching to your language
-    chart: {
-        URL: 'https://wol.jw.org/pl/wol/d/r12/lp-p/1101990130#h=252',
-        text: 'Zdarzenia oparte na',
-        book: '“Całe Pismo natchnione przez Boga i pożyteczne”',
-        chapter: 'Studium 3- Umiejscawianie wydarzeń w strumieniu czasu',
-        caption: 'Ważne daty historyczne',
-    },
     // Symbols: a. for “after”; b. for “before”; c. for “circa”, or “about”.
     //          C.E. for Common Era; B.C.E. for Before Common Era
     symbols: {
@@ -120,9 +137,8 @@ export default {
             New World Translation of the Holy Scriptures of Jehovah\'s Witnesses.',
 
         'How it Works',
-        'Read right away from the beginning and check each section that you have read.',
-        'If you want to start at the current position of your Bible reading, select \
-            "Continue at" on the Settings page.',
+        'Choose a reading plan and the duration at the top of the page.',
+        'Check the section that you have read.',
         'After finishing reading the Bible select "Start Over" on the Settings page.',
     ],
 
