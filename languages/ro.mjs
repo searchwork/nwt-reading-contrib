@@ -3,12 +3,9 @@
 // (c) Searchwork.org
 // Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 //
-// Template for app version 3.2.2. Any missing item will fall back to english
+// Template for app version 3.3.0. Any missing item will fall back to english
 //
 export default {
-    // Name of the language
-    me: 'Română',
-
     // Pages
     pages: {
         schedule: 'Programul',
@@ -31,12 +28,6 @@ export default {
         chronological: 'cronologic'
     },
     durations_header: 'durată',
-    durations: {
-        '6m': 'în 6 luni',
-        '1y': 'în 1 an',
-        '2y': 'în 2 ani',
-        '4y': 'în 4 ani'
-    },
     setRead: {
         label: 'Setează citit',
         question: 'Vrei să setezi totul dinainte ca citit și totul ce urmează ca necitit?'
@@ -76,47 +67,6 @@ export default {
         chapter: 'Studiul numărul 3 — Plasarea evenimentelor în timp',
         caption: 'Date istorice remarcabile',
     },
-    showLocations: {
-        label: 'Afișează locații (experimental)',
-        URL: 'https://wol.jw.org/ro/wol/d/r34/lp-m/1102003130',
-        text: 'Afișează referințe la locații în broșura',
-        title: '„Să vedem ţara aceea bună!“',
-        legend: 'Pentru o legendă vezi',
-        caption: 'Indexul hărţilor',
-    },
-    help: 'Ajutor',
-    legal: 'Juridice',
-    version: 'Versiune',
-
-    // Bible
-    //
-    // Ordered list of the Bible books
-    books: [
-        'Geneza', 'Exodul', 'Leviticul', 'Numerele', 'Deuteronomul',
-        'Iosua', 'Judecătorii', 'Rut', '1 Samuel', '2 Samuel',
-        '1 Regi', '2 Regi', '1 Cronici', '2 Cronici',
-        'Ezra', 'Neemia', 'Estera', 'Iov',
-        'Psalmii', 'Proverbele', 'Eclesiastul', 'Cântarea cântărilor',
-        'Isaia', 'Ieremia', 'Plângerile', 'Ezechiel', 'Daniel',
-        'Osea', 'Ioel', 'Amos', 'Obadia', 'Iona', 'Mica', 'Naum',
-        'Habacuc', 'Țefania', 'Hagai', 'Zaharia', 'Maleahi',
-        'Matei', 'Marcu', 'Luca', 'Ioan', 'Faptele',
-        'Romani', '1 Corinteni', '2 Corinteni',
-        'Galateni', 'Efeseni', 'Filipeni', 'Coloseni',
-        '1 Tesaloniceni', '2 Tesaloniceni', '1 Timotei', '2 Timotei',
-        'Tit', 'Filimon', 'Evrei', 'Iacov',
-        '1 Petru', '2 Petru', '1 Ioan', '2 Ioan', '3 Ioan',
-        'Iuda', 'Revelația'
-    ],
-    // Singular form of Psalms used in references like "Psalm 23" 
-    psalm: 'Psalmul',
-    // Base link to the Bible at jw.org in this language
-    // (On the Bible tab open Genesis, chapter 1, and use the link without "/genesis/1/")
-    baseURL: 'https://www.jw.org/ro/biblioteca/biblia/bi12/carti',
-
-
-    // ----------  Translating below section is OPTIONAL  vvvvvvvvvv
-    //
     // Symbols: a. for “after”; b. for “before”; c. for “circa”, or “about”.
     //          C.E. for Common Era; B.C.E. for Before Common Era
     symbols: {
@@ -126,11 +76,21 @@ export default {
         'C.E.': 'e.n.',
         'B.C.E.': 'î.e.n.'
     },
+    showLocations: {
+        label: 'Afișează locații (experimental)',
+        URL: 'https://wol.jw.org/ro/wol/d/r34/lp-m/1102003130',
+        text: 'Afișează referințe la locații în broșura',
+        title: '„Să vedem ţara aceea bună!“',
+        legend: 'Pentru o legendă vezi',
+        caption: 'Indexul hărţilor',
+    },
+    legal: 'Juridice',
+    version: 'Versiune',
+    help: 'Ajutor',
 
 
-    // Help
+    // Help page
     //
-    // Help
     helpPage: [
         'About',
         'NWT Reading helps you to keep track of your reading schedule of the \
@@ -142,15 +102,15 @@ export default {
         'After finishing reading the Bible select "Start Over" on the Settings page.',
     ],
 
-    // Stored Data
+    // Stored Data page
+    //
     storedDataPage: [
         'This is a dump of all the data that is stored in the app. \
             It can be useful for troubleshooting and privacy checking.'
     ],
 
-    // Legal
+    // Privacy Policy page
     //
-    // Privacy Policy
     privacyPolicyPage: [
         'The NWT Reading mobile application (the “PRODUCT”) does not collect \
         any personal information. All data is stored locally.',
@@ -164,6 +124,5 @@ export default {
         Our privacy policy may change from time to time. \
         You are advised to review this Privacy Policy periodically for any changes. \
         Changes to this Privacy Policy are effective when they are posted on this page.'
-    ],
-    // ^^^^^^^^^^^^  Translating above section is OPTIONAL  ------------
+    ]
 };

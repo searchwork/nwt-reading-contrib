@@ -3,12 +3,9 @@
 // (c) Searchwork.org
 // Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 //
-// Template for app version 3.2.2. Any missing item will fall back to english
+// Template for app version 3.3.0. Any missing item will fall back to english
 //
 export default {
-    // Name of the language
-    me: 'Português (Brasil)',
-
     // Pages
     pages: {
         schedule: 'Programa',
@@ -31,12 +28,6 @@ export default {
         chronological: 'Cronológica'
     },
     durations_header: 'duração',
-    durations: {
-        '6m': 'em 6 meses',
-        '1y': 'em 1 ano',
-        '2y': 'em 2 anos',
-        '4y': 'em 4 anos'
-    },
     setRead: {
         label: 'Definido lido',
         question: 'Deseja definir todas as seções anteriores como lidas e as seguintes para não lidas?'
@@ -57,14 +48,14 @@ export default {
         description: 'Apague todo o status de leitura.',
         question: 'Tem certeza que quer apagar todo o status de leitura?'
     },
-    resetEndDate: {  // ** ToDo **
-        label: 'Reset end date',
-        description: 'Reset the end date to be on time with reading.',
-        question: 'Reset the end date to be on time with reading?',
+    resetEndDate: {
+        label: 'Redefinir data de término',
+        description: 'Redefina a data de término para estar dentro do prazo com a leitura.',
+        question: 'Redefinir a data de término para que a leitura seja pontual',
     },
-    withEndDate: {  // ** ToDo **
-        label: 'With End Date',
-        description: 'Track daily reading with an end date.',
+    withEndDate: { 
+        label: 'Com Data Final',
+        description: 'Acompanhe a leitura diária com uma data de término.',
     },
     showEvents: {
         label: 'Mostrar eventos (experimental)',
@@ -76,47 +67,6 @@ export default {
         chapter: 'Estudo Número 3—Localização dos eventos na corrente do tempo',
         caption: 'Tabela de datas históricas notáveis',
     },
-    showLocations: {
-        label: 'Show Locations (experimental)',
-        URL: 'https://wol.jw.org/en/wol/d/r1/lp-e/1102003130',
-        text: 'Show location references to the brosure',
-        title: '“See the Good Land”',
-        legend: 'For a legend see the',
-        caption: 'Index to Maps',
-    },
-    help: 'Ajuda',
-    legal: 'Legal',
-    version: 'Versão',
-
-    // Bible
-    //
-    // Ordered list of the Bible books
-    books: [
-        'Gênesis', 'Êxodo', 'Levítico', 'Números', 'Deuteronômio',
-        'Josué', 'Juízes', 'Rute', '1 Samuel', '2 Samuel',
-        '1 Reis', '2 Reis', '1 Crônicas', '2 Crônicas',
-        'Esdras', 'Neemias', 'Ester', 'Jó',
-        'Salmos', 'Provérbios', 'Eclesiastes', 'Cântico de Salomão',
-        'Isaías', 'Jeremias', 'Lamentações', 'Ezequiel', 'Daniel',
-        'Oseias', 'Joel', 'Amós', 'Obadias', 'Jonas', 'Miqueias', 'Naum',
-        'Habacuque', 'Sofonias', 'Ageu', 'Zacarias', 'Malaquias',
-        'Mateus', 'Marcos', 'Lucas', 'João', 'Atos',
-        'Romanos', '1 Coríntios', '2 Coríntios',
-        'Galátas', 'Efésios', 'Filipenses', 'Colossenses',
-        '1 Tessalonicenses', '2 Tessalonicenses', '1 Timóteo', '2 Timóteo',
-        'Tito', 'Filêmon', 'Hebreus', 'Tiago',
-        '1 Pedro', '2 Pedro', '1 João', '2 João', '3 João',
-        'Judas', 'Apocaplise'
-    ],
-    // Singular form of Psalms used in references like "Psalm 23" 
-    psalm: 'Salmo',
-    // Base link to the Bible at jw.org in this language
-    // (On the Bible tab open Genesis, chapter 1, and use the link without "/genesis/1/")
-    baseURL: 'https://www.jw.org/pt/biblioteca/biblia/biblia-de-estudo/livros',
-
-
-    // ----------  Translating below section is OPTIONAL  vvvvvvvvvv
-    //
     // Symbols: a. for “after”; b. for “before”; c. for “circa”, or “about”.
     //          C.E. for Common Era; B.C.E. for Before Common Era
     symbols: {
@@ -126,12 +76,23 @@ export default {
         'C.E.': 'EC',
         'B.C.E.': 'AEC'
     },
+    showLocations: {
+        label: 'Show Locations (experimental)',
+        URL: 'https://wol.jw.org/en/wol/d/r1/lp-e/1102003130',
+        text: 'Show location references to the brosure',
+        title: '“See the Good Land”',
+        legend: 'For a legend see the',
+        caption: 'Index to Maps',
+    },
+    legal: 'Legal',
+    version: 'Versão',
+    help: 'Ajuda',
 
 
-    // Help
+
+    // Help page
     //
-    // Help
-   helpPage: [
+    helpPage: [
         'Sobre',
         'NWT Reading ajuda você a acompanhar o seu programa de leitura da \
             Tradução do Novo Mundo da Bíblia Sagrada das Testemunhas de Jeová.',
@@ -142,15 +103,15 @@ export default {
         'Depois de terminar de ler a Bíblia, selecione "Começar novamente" na página Opções.',
     ],
 
-    // Stored Data
+    // Stored Data page
+    //
     storedDataPage: [
         'Este é um dump de todos os dados armazenados no aplicativo. \
             Pode ser útil para solução de problemas e verificação de privacidade.'
     ],
 
-    // Legal
+    // Privacy Policy page
     //
-    // Privacy Policy
     privacyPolicyPage: [
         'O aplicativo móvel NWT Reading (o “PRODUTO”) não coleta \
         nenhuma informação pessoal. Todos os dados são armazenados localmente.',
@@ -164,6 +125,5 @@ export default {
         Nossa Política de Privacidade pode mudar de tempos em tempos. \
         Você está avisado para analisar esta Política de Privacidade periodicamente para qualquer alteração. \
         As alterações nesta Política de Privacidade terão efeito quando são publicadas nesta página.'
-    ],
-    // ^^^^^^^^^^^^  Translating above section is OPTIONAL  ------------
+    ]
 };

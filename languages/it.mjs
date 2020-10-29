@@ -3,12 +3,9 @@
 // (c) Searchwork.org
 // Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 //
-// Template for app version 3.2.2. Any missing item will fall back to english
+// Template for app version 3.3.0. Any missing item will fall back to english
 //
 export default {
-    // Name of the language
-    me: 'Italiano',
-    
     // Pages
     pages: {
         schedule: 'Programma',
@@ -31,12 +28,6 @@ export default {
         chronological: 'Cronologico'
     },
     durations_header: 'durata',
-    durations: {
-        '6m': 'tra 6 mesi',
-        '1y': 'tra 1 anno',
-        '2y': 'tra 2 anni',
-        '4y': 'tra 4 anni'
-    },
     setRead: {
         label: 'Impostare letto',
         question: 'Vuoi impostare tutte le sezioni precedenti come da leggere e quelle che seguono come non lette?'
@@ -57,14 +48,14 @@ export default {
         description: 'Azzera il programma di lettura e imposta oggi come data di inizio.',
         question: 'Vuoi azzerare il programma di lettura e impostare oggi come data di inizio?'
     },
-    resetEndDate: {  // ** ToDo **
-        label: 'Reset end date',
-        description: 'Reset the end date to be on time with reading.',
-        question: 'Reset the end date to be on time with reading?',
+    resetEndDate: {
+        label: 'Reimposta data di fine',
+        description: 'Reimposta la data di fine in modo che sia puntuale con la lettura.',
+        question: 'Reimpostare la data di fine in modo che sia puntuale con la lettura?',
     },
-    withEndDate: {  // ** ToDo **
-        label: 'With End Date',
-        description: 'Track daily reading with an end date.',
+    withEndDate: {
+        label: 'Con data di fine',
+        description: 'Tieni traccia della lettura quotidiana con una data di fine.',
     },
     showEvents: {
         label: 'Mostra eventi (sperimentale)',
@@ -76,47 +67,6 @@ export default {
         chapter: 'Studio numero 3: Come collocare gli avvenimenti nel tempo',
         caption: 'Elenco di importanti date storiche',
     },
-    showLocations: {
-        label: 'Show Locations (experimental)',
-        URL: 'https://wol.jw.org/en/wol/d/r1/lp-e/1102003130',
-        text: 'Show location references to the brosure',
-        title: '“See the Good Land”',
-        legend: 'For a legend see the',
-        caption: 'Index to Maps',
-    },
-    help: 'Aiuto',
-    legal: 'Legale',
-    version: 'Versione',
-
-    // Bible
-    //
-    // Ordered list of the Bible books
-    books: [
-        'Genesi', 'Esodo', 'Levitico', 'Numeri', 'Deuteronomio',
-        'Giosuè', 'Giudici', 'Rut', '1 Samuele', '2 Samuele',
-        '1 Re', '2 Re', '1 Cronache', '2 Cronache',
-        'Esdra', 'Neemia', 'Ester', 'Giobbe',
-        'Salmi', 'Proverbi', 'Ecclesiaste', 'Cantico dei Cantici',
-        'Isaia', 'Geremia', 'Lamentazioni', 'Ezechiele', 'Daniele',
-        'Osea', 'Gioele', 'Amos', 'Abdia', 'Giona', 'Michea', 'Naum',
-        'Abacuc', 'Sofonia', 'Aggeo', 'Zaccaria', 'Malachia',
-        'Matteo', 'Marco', 'Luca', 'Giovanni', 'Atti',
-        'Romani', '1 Corinti', '2 Corinti',
-        'Galati', 'Efesini', 'Filippesi', 'Colossesi',
-        '1 Tessalonicesi', '2 Tessalonicesi', '1 Timoteo', '2 Timoteo',
-        'Tito', 'Filemone', 'Ebrei', 'Giacomo',
-        '1 Pietro', '2 Pietro', '1 Giovanni', '2 Giovanni', '3 Giovanni',
-        'Giuda', 'Rivelazione'
-    ],
-    // Singular form of Psalms used in references like "Psalm 23" 
-    psalm: 'Salmo',
-    // Base link to the Bible at jw.org in this language
-    // (On the Bible tab open Genesis, chapter 1, and use the link without "/genesis/1/")
-    baseURL: 'https://www.jw.org/it/biblioteca-digitale/bibbia/bibbia-per-lo-studio/libri',
-
-
-    // ----------  Translating below section is OPTIONAL  vvvvvvvvvv
-    //
     // Symbols: a. for “after”; b. for “before”; c. for “circa”, or “about”.
     //          C.E. for Common Era; B.C.E. for Before Common Era
     symbols: {
@@ -126,11 +76,21 @@ export default {
         'E.V.': 'E.V.',
         'a.E.V.': 'a.E.V.'
     },
+    showLocations: {
+        label: 'Show Locations (experimental)',
+        URL: 'https://wol.jw.org/en/wol/d/r1/lp-e/1102003130',
+        text: 'Show location references to the brosure',
+        title: '“See the Good Land”',
+        legend: 'For a legend see the',
+        caption: 'Index to Maps',
+    },
+    legal: 'Legale',
+    version: 'Versione',
+    help: 'Aiuto',
 
 
-    // Help
+    // Help page
     //
-    // Help
     helpPage: [
         'About',
         'NWT Reading helps you to keep track of your reading schedule of the \
@@ -142,15 +102,15 @@ export default {
         'After finishing reading the Bible select "Start Over" on the Settings page.',
     ],
 
-    // Stored Data
+    // Stored Data page
+    //
     storedDataPage: [
         'This is a dump of all the data that is stored in the app. \
             It can be useful for troubleshooting and privacy checking.'
     ],
 
-    // Legal
+    // Privacy Policy page
     //
-    // Privacy Policy
     privacyPolicyPage: [
         'The NWT Reading mobile application (the “PRODUCT”) does not collect \
         any personal information. All data is stored locally.',
@@ -164,6 +124,5 @@ export default {
         Our privacy policy may change from time to time. \
         You are advised to review this Privacy Policy periodically for any changes. \
         Changes to this Privacy Policy are effective when they are posted on this page.'
-    ],
-    // ^^^^^^^^^^^^  Translating above section is OPTIONAL  ------------
+    ]
 };

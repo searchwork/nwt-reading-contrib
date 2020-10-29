@@ -3,12 +3,9 @@
 // (c) Searchwork.org
 // Licensed under Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
 //
-// Template for app version 3.2.2. Any missing item will fall back to english
+// Template for app version 3.3.0. Any missing item will fall back to english
 //
 export default {
-    // Name of the language
-    me: 'Español',
-    
     // Pages
     pages: {
         schedule: 'Programa',
@@ -31,12 +28,6 @@ export default {
         chronological: 'Cronológico'
     },
     durations_header: 'duración',
-    durations: {
-        '6m': 'dentro de 6 meses',
-        '1y': 'dentro de 1 año',
-        '2y': 'dentro de 2 años',
-        '4y': 'dentro de 4 años'
-    },
     setRead: {
         label: 'Establecer leído',
         question: 'Desea establecer todas las secciones anteriores marcadas como leídas y las siguientes como no leídas?'
@@ -57,14 +48,14 @@ export default {
         description: 'Borra el estado de lectura.',
         question: 'Desea borrar el estado de lectura?'
     },
-    resetEndDate: {  // ** ToDo **
-        label: 'Reset end date',
-        description: 'Reset the end date to be on time with reading.',
-        question: 'Reset the end date to be on time with reading?',
+    resetEndDate: {
+        label: 'Restablecer la fecha de finalización',
+        description: 'Restablezca la fecha de finalización para estar a tiempo con la lectura.',
+        question: 'Restablecer la fecha de finalización para estar a tiempo con la lectura?',
     },
-    withEndDate: {  // ** ToDo **
-        label: 'With End Date',
-        description: 'Track daily reading with an end date.',
+    withEndDate: {
+        label: 'Con fecha de finalización',
+        description: 'Realice un seguimiento de la lectura diaria con una fecha de finalización.',
     },
     showEvents: {
         label: 'Mostrar eventos (experimental)',
@@ -76,47 +67,6 @@ export default {
         chapter: 'Estudio número 3: Sucesos fechados en la corriente del tiempo',
         caption: 'Cuadro de fechas históricas sobresalientes',
     },
-    showLocations: {
-        label: 'Show Locations (experimental)',
-        URL: 'https://wol.jw.org/en/wol/d/r1/lp-e/1102003130',
-        text: 'Show location references to the brosure',
-        title: '“See the Good Land”',
-        legend: 'For a legend see the',
-        caption: 'Index to Maps',
-    },
-    help: 'Ayuda',
-    legal: 'Legal',
-    version: 'Versión',
-
-    // Bible
-    //
-    // Ordered list of the Bible books
-    books: [
-        'Génesis', 'Éxodo', 'Levítico', 'Números', 'Deuteronomio',
-        'Josué', 'Jueces', 'Rut', '1 Samuel', '2 Samuel',
-        '1 Reyes', '2 Reyes', '1 Crónicas', '2 Crónicas',
-        'Esdras', 'Nehemías', 'Ester', 'Job',
-        'Salmos', 'Proverbios', 'Eclesiastés', 'El Cantar de los Cantares',
-        'Isaías', 'Jeremías', 'Lamentaciones', 'Ezequiel', 'Daniel',
-        'Oseas', 'Joel', 'Amós', 'Abdías', 'Jonás', 'Miqueas', 'Nahúm',
-        'Habacuc', 'Sofonías', 'Ageo', 'Zacarías', 'Malaquías',
-        'Mateo', 'Marcos', 'Lucas', 'Juan', 'Hechos',
-        'Romanos', '1 Corintios', '2 Corintios',
-        'Gálatas', 'Efesios', 'Filipenses', 'Colosenses',
-        '1 Tesalonicenses', '2 Tesalonicenses', '1 Timoteo', '2 Timoteo',
-        'Tito', 'Filemón', 'Hebreos', 'Santiago',
-        '1 Pedro', '2 Pedro', '1 Juan', '2 Juan', '3 Juan',
-        'Judas', 'Apocalipsis'
-    ],
-    // Singular form of Psalms used in references like "Psalm 23" 
-    psalm: 'Salmo',
-    // Base link to the Bible at jw.org in this language
-    // (On the Bible tab open Genesis, chapter 1, and use the link without "/genesis/1/")
-    baseURL: 'https://www.jw.org/es/biblioteca/biblia/nwt/libros',
-
-
-    // ----------  Translating below section is OPTIONAL  vvvvvvvvvv
-    //
     // Symbols: a. for “after”; b. for “before”; c. for “circa”, or “about”.
     //          C.E. for Common Era; B.C.E. for Before Common Era
     symbols: {
@@ -126,11 +76,21 @@ export default {
         'C.E.': 'C.E.',
         'B.C.E.': 'a.C.E.'
     },
+    showLocations: {
+        label: 'Mostrar ubicaciones (experimental)',
+        URL: 'https://wol.jw.org/en/wol/d/r1/lp-e/1102003130',
+        text: 'Mostrar referencias de ubicación al folleto',
+        title: '“la buena tierra”',
+        legend: 'Para una leyenda ver el',
+        caption: 'Índice para los mapas',
+    },
+    legal: 'Legal',
+    help: 'Ayuda',
+    version: 'Versión',
 
 
-    // Help
+    // Help page
     //
-    // Help
     helpPage: [
         'About',
         'NWT Reading helps you to keep track of your reading schedule of the \
@@ -142,15 +102,15 @@ export default {
         'After finishing reading the Bible select "Start Over" on the Settings page.',
     ],
 
-    // Stored Data
+    // Stored Data page
+    //
     storedDataPage: [
         'This is a dump of all the data that is stored in the app. \
             It can be useful for troubleshooting and privacy checking.'
     ],
 
-    // Legal
+    // Privacy Policy page
     //
-    // Privacy Policy
     privacyPolicyPage: [
         'The NWT Reading mobile application (the “PRODUCT”) does not collect \
         any personal information. All data is stored locally.',
@@ -164,6 +124,5 @@ export default {
         Our privacy policy may change from time to time. \
         You are advised to review this Privacy Policy periodically for any changes. \
         Changes to this Privacy Policy are effective when they are posted on this page.'
-    ],
-    // ^^^^^^^^^^^^  Translating above section is OPTIONAL  ------------
+    ]
 };
