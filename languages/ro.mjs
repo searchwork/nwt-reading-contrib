@@ -36,6 +36,7 @@ export default {
     // Settings page 
     //
     english: 'engleză',
+    display: 'afișare',
     language: {
         label: 'Limba',
         placeholder: 'Limba',

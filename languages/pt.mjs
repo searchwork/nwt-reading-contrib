@@ -36,6 +36,7 @@ export default {
     // Settings page 
     //
     english: 'Inglês',
+    display: 'Mostrar',
     language: {
         label: 'Idioma',
         placeholder: 'Idioma',
