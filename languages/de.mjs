@@ -31,9 +31,9 @@ export default {
     setRead: {
         label: 'Gelesen setzen',
         question: 'Alles davor wird auf gelesen und alles danach auf ungelesen gesetzt.',
-    },    
+    },
 
-    // Settings page 
+    // Settings page
     //
     english: 'englisch',
     display: 'Anzeige',
@@ -67,7 +67,6 @@ export default {
         title: '„Die ganze Schrift ist von Gott inspiriert und nützlich“',
         chapter: 'Studie 3 — Ereignisse in den Strom der Zeit einordnen',
         caption: 'Tabelle hervorragender Geschichtsdaten',
-        
     },
     // Symbols: a. for “after”; b. for “before”; c. for “circa”, or “about”.
     //          C.E. for Common Era; B.C.E. for Before Common Era
@@ -89,8 +88,8 @@ export default {
     legal: 'Rechtliches',
     version: 'Version',
     help: 'Hilfe',
-    
-    
+
+
     // Help page
     //
     helpPage: [

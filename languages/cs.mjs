@@ -14,29 +14,29 @@ export default {
         storedData: 'Uložená Data',
         privacyPolicy: 'Zásady ochrany osobních údajů'
     },
-    
+
     // Schedule page
     //
     plans_header: 'Vyber plán čtení',
     // Reading plans
     plans: {
         // In the order the chapters appear in the Bible
-        sekvenční: 'Sekvenční',
+        sequential: 'Sekvenční',
         // In the order the Bible books were written
-        písemné: 'Jak je napsáno',
+        written: 'Jak je napsáno',
         // In the order the events happened
-        chronologické: 'Chronologické'
+        chronological: 'Chronologické'
     },
     durations_header: 'Duration',
     setRead: {
         label: 'Nastavit čtení',
         question: 'Chcete nastavit všechny předchozí oddíly na čtení a ty následující na nepřečtené?'
     },
-    
-    // Settings page 
+
+    // Settings page
     //
     english: 'Angličtina',
-    display: 'Display',
+    display: 'Zobrazit',
     language: {
         label: 'Jazyk',
         placeholder: 'Jazyk',

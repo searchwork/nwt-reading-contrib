@@ -33,7 +33,7 @@ export default {
         question: 'Deseja definir todas as seções anteriores como lidas e as seguintes para não lidas?'
     },
 
-    // Settings page 
+    // Settings page
     //
     english: 'Inglês',
     display: 'Mostrar',
@@ -54,7 +54,7 @@ export default {
         description: 'Redefina a data de término para estar dentro do prazo com a leitura.',
         question: 'Redefinir a data de término para que a leitura seja pontual',
     },
-    withEndDate: { 
+    withEndDate: {
         label: 'Com Data Final',
         description: 'Acompanhe a leitura diária com uma data de término.',
     },

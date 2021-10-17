@@ -14,7 +14,7 @@ export default {
         storedData: 'Stored Data',
         privacyPolicy: 'Privacy Policy'
     },
-    
+
     // Schedule page
     //
     plans_header: 'Select a reading plan',
@@ -32,8 +32,8 @@ export default {
         label: 'Set Read',
         question: 'Do you want to set all previous sections to read and those following to unread?'
     },
-    
-    // Settings page 
+
+    // Settings page
     //
     english: 'English',
     display: 'Display',
@@ -80,7 +80,7 @@ export default {
     showLocations: {
         label: 'Show Locations (experimental)',
         URL: 'https://wol.jw.org/en/wol/d/r1/lp-e/1102003130',
-        text: 'Show location references to the brosure',
+        text: 'Show location references to the brochure',
         title: '“See the Good Land”',
         legend: 'For a legend see the',
         caption: 'Index to Maps',

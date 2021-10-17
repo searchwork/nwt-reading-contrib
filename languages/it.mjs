@@ -14,7 +14,7 @@ export default {
         storedData: 'Dati memorizzati (inglese)',
         privacyPolicy: 'Politica sulla riservatezza (inglese)'
     },
-    
+
     // Schedule page
     //
     plans_header: 'Seleziona un piano di lettura',
@@ -32,8 +32,8 @@ export default {
         label: 'Impostare letto',
         question: 'Vuoi impostare tutte le sezioni precedenti come da leggere e quelle che seguono come non lette?'
     },
-    
-    // Settings page 
+
+    // Settings page
     //
     english: 'inglese',
     display: 'Mostrare',

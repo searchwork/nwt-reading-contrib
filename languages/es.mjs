@@ -14,7 +14,7 @@ export default {
         storedData: 'Datos almacenados (ingles)',
         privacyPolicy: 'Politica de privacidad (ingles)'
     },
-    
+
     // Schedule page
     //
     plans_header: 'Seleccione un plan de lectura',
@@ -32,8 +32,8 @@ export default {
         label: 'Establecer leído',
         question: 'Desea establecer todas las secciones anteriores marcadas como leídas y las siguientes como no leídas?'
     },
-    
-    // Settings page 
+
+    // Settings page
     //
     english: 'Ingles',
     display: 'Visualización',

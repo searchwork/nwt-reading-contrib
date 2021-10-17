@@ -33,7 +33,7 @@ export default {
         question: 'Vrei să setezi totul dinainte ca citit și totul ce urmează ca necitit?'
     },
 
-    // Settings page 
+    // Settings page
     //
     english: 'engleză',
     display: 'afișare',
