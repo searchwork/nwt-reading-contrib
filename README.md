@@ -15,7 +15,7 @@ If you want to make the NWT Reading app available in another language, this is a
 
 ### App Development
 
-If you are familiar with HTML/CSS/JavaScript and are interested in contributing to the app development, please send a note to support@searchwork.org.
+The app is being [rebuild in an open source project](https://github.com/searchwork/nwt-reading). You are warmly welcome to watch the progress and contribute to the development. 
 
 ## Frequently Asked Questions
 
