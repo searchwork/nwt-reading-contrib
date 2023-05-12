@@ -8,29 +8,29 @@
 export default {
     // Pages
     pages: {
-        schedule: 'Schedule',
-        settings: 'Settings',
-        help: 'Help',
-        storedData: 'Stored Data',
-        privacyPolicy: 'Privacy Policy'
+        schedule: 'Ɖoɖo'
+        settings: 'Ɖoɖowo',
+        help: 'Kpekpeɖeŋu',
+        storedData: 'Nyatakaka Siwo Wodzra Ðo',
+        privacyPolicy: 'Ameŋunyatakakawo Ŋuti Ðoɖo'
     },
 
     // Schedule page
     //
-    plans_header: 'Select a reading plan',
+    plans_header: 'Tia nuxexlẽ ƒe ɖoɖo',
     // Reading plans
     plans: {
         // In the order the chapters appear in the Bible
-        sequential: 'Sequential',
+        sequential: 'Nusiwo kplɔ wo nɔewo ɖo',
         // In the order the Bible books were written
-        written: 'As written',
+        written: 'Abe alesi woŋlɔe ene',
         // In the order the events happened
-        chronological: 'Chronological'
+        chronological: 'Ɣeyiɣikɔntabubu ƒe ɖoɖo'
     },
-    durations_header: 'Duration',
+    durations_header: 'Ɣeyiɣi didime',
     setRead: {
-        label: 'Set Read',
-        question: 'Do you want to set all previous sections to read and those following to unread?'
+        label: 'Ðo Xlẽe ',
+        question: 'Ðe nèdi be yeaɖo akpa siwo katã do ŋgɔ la be woaxlẽ eye esiwo kplɔe ɖo nanye esiwo womaxlẽ oa? '
     },
 
     // Settings page
