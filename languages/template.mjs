@@ -39,13 +39,13 @@ export default {
     display: 'Display',
     language: {
         label: 'Gbegbɔgblɔ',
-        placeholder: 'Language',
-        title: 'Choose a language',
-        contribute: 'Contribute Translation'
+        placeholder: 'Gbegbᴐgblᴐ ',
+        title: 'Tia gbe aɖe ',
+        contribute: 'Kpe asi ɖe Gbegɔmeɖeɖe Ŋu '
     },
     startOver: {
-        label: 'Start Over',
-        title: 'Start over',
+        label: 'Dze Egɔme Gbugbɔgadze egɔme ',
+        title: 'Dze egɔme tso gɔmedzedzea ke ',
         description: 'Clear the reading status.',
         question: 'Do you want to clear the reading status?'
     },
