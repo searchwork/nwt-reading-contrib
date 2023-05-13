@@ -38,7 +38,7 @@ export default {
     english: 'English',
     display: 'Display',
     language: {
-        label: 'Language',
+        label: 'Gbegbɔgblɔ',
         placeholder: 'Language',
         title: 'Choose a language',
         contribute: 'Contribute Translation'
