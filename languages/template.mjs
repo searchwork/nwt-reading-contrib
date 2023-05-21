@@ -80,22 +80,21 @@ export default {
     showLocations: {
         label: 'Show Locations (experimental)',
         URL: 'https://wol.jw.org/en/wol/d/r1/lp-e/1102003130',
-        text: 'Show location references to the brochure',
-        title: '“See the Good Land”',
-        legend: 'For a legend see the',
-        caption: 'Index to Maps',
+        text: 'Fia teƒe si woƒo nu tsoe le agbalẽ gbadzaa me',
+        title: '“Kpɔ Anyigba Nyui la ɖa”',
+        legend: 'Ne èdi xotutu aɖe la, kpɔ...',
+        caption: 'Mɔfiagbalɛ̃ na Anyigbatatawo ',
     },
-    legal: 'Legal',
-    version: 'Version',
-    help: 'Help',
+    legal: 'Le senu',
+    version: 'Esi Zãm Nèle',
+    help: 'Kpekpeɖeŋu',
 
 
     // Help page
     //
     helpPage: [
-        'About',
-        'NWT Reading helps you to keep track of your reading schedule of the \
-            New World Translation of the Holy Scriptures of Jehovah\'s Witnesses.',
+        'Ku ɖe',
+        'Translation of the Holy Scriptures of Jehovah\'s Witnesses.',
 
         'How it Works',
         'Choose a reading plan and the duration at the top of the page.',
