@@ -50,16 +50,16 @@ export default {
         question: 'Do you want to clear the reading status?'
     },
     resetEndDate: {
-        label: 'Reset End Date',
-        description: 'Reset the end date to be on time with reading.',
-        question: 'Reset the end date to be on time with reading?',
+        label: 'Gbugbɔ Ðo Nuwuwu Ŋkekea',
+        description: 'Gbugbɔ ɖo ŋkeke si dzi nàwu enu be wòanɔ game dzi kple nuxexlẽ.',
+        question: 'Àgbugbɔ ŋkeke si dzi nàwu enu be wòanɔ game dzi kple nuxexlẽa?',
     },
     withEndDate: {
-        label: 'With End Date',
-        description: 'Track daily reading with an end date.',
+        label: 'Kple Nuwuwu Ɣletiŋkeke',
+        description: 'Lé ŋku ɖe gbesiagbe nuxexlẽ ŋu kple ŋkeke si dzi nàwu enu.',
     },
     showEvents: {
-        label: 'Show Events (experimental)',
+        label: 'Fia Nudzɔdzɔwo (dodokpɔ).',
         // Below information can be found in the WOL at the provided link
         // after switching to your language
         URL: 'https://wol.jw.org/en/wol/d/r1/lp-e/1101990130#h=252',
