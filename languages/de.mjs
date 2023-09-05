@@ -10,9 +10,9 @@ export default {
     pages: {
         schedule: 'Plan',
         settings: 'Einstellungen',
-        help: 'Hilfe (englisch)',
-        storedData: 'Gespeicherte Daten (englisch)',
-        privacyPolicy: 'Datenschutzerklärung (englisch)'
+        help: 'Hilfe',
+        storedData: 'Gespeicherte Daten',
+        privacyPolicy: 'Datenschutzerklärung'
     },
 
     // Schedule page
@@ -93,37 +93,31 @@ export default {
     // Help page
     //
     helpPage: [
-        'About',
-        'NWT Reading helps you to keep track of your reading schedule of the \
-            New World Translation of the Holy Scriptures of Jehovah\'s Witnesses.',
+        'Über',
+        'NWT Reading hilft dir, deinen Leseplan für die Neue Welt Übersetzung der \
+            Heiligen Schrift von Jehovas Zeugen im Auge zu behalten.',
 
-        'How it Works',
-        'Choose a reading plan and the duration at the top of the page.',
-        'Check the section that you have read.',
-        'After finishing reading the Bible select "Start Over" on the Settings page.',
+        'So funktionier es',
+        'Wähle in der Menüleiste oben die Art des Leseplans und die Dauer aus.',
+        'Markiere die gelesenen Abschnitte als gelesen.',
+        'Nachdem du die Bibel gelesen hast, wähle "Neu beginnen" in den Einstellungen.',
     ],
 
     // Stored Data page
     //
     storedDataPage: [
-        'This is a dump of all the data that is stored in the app. \
-            It can be useful for troubleshooting and privacy checking.'
+        'Eine Auflistung aller Daten, die in der App gespeichert sind. \
+            Dies kann nützlich sein, um Probleme zu beheben und die Privatsphäre zu überprüfen.'
     ],
 
     // Privacy Policy page
     //
     privacyPolicyPage: [
-        'The NWT Reading mobile application (the “PRODUCT”) does not collect \
-        any personal information. All data is stored locally.',
+        'Die NWT Reading App (das “PRODUKT”) sammelt keine persönlichen \
+        Informationen. Alle Daten werden lokal gespeichert.',
 
-        'Searchwork.org, does not allow advertising companies to collect data through \
-        our PRODUCT for ad targeting. \
-        We do not share data collected by this PRODUCT with other organizations \
-        for any purpose.',
+    'Searchwork.org erlaubt es Werbeunternehmen nicht, Daten durch unser PRODUKT für Werbezwecke zu sammeln. Wir teilen Daten, die durch dieses PRODUKT gesammelt werden, nicht mit anderen Organisationen zu irgendeinem Zweck.',
 
-        'This privacy policy was last updated on 05/04/2019. \
-        Our privacy policy may change from time to time. \
-        You are advised to review this Privacy Policy periodically for any changes. \
-        Changes to this Privacy Policy are effective when they are posted on this page.'
+        'Diese Datenschutzerklärung wurde zuletzt am 05.04.2019 aktualisiert. Unsere Datenschutzerklärung kann sich von Zeit zu Zeit ändern. Es wird empfohlen, diese Datenschutzrichtlinie regelmäßig auf Änderungen zu überprüfen. Änderungen dieser Datenschutzerklärung treten in Kraft, wenn sie auf dieser Seite veröffentlicht werden.'
     ]
 };
