@@ -4,7 +4,7 @@ Welcome to the former support repository for the NWT Reading app.
 
 **Important Notice:** This version of NWT Reading is deprecated and no longer maintained. The NWT Reading app has been open-sourced and development has moved to a new repository.
 
-We recommend switching to the new version: [new repository](./../nwt-reading/)
+We recommend switching to the new version: [new repository](https://github.com/searchwork/nwt-reading)
 
 ## How to Contribute
 
